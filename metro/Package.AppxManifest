@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="2653Dialectek.Blackguard" Publisher="CN=564406A5-D081-4774-AE63-CC706F064A0E" Version="1.0.0.11" />
+  <Properties>
+    <DisplayName>Blackguard</DisplayName>
+    <PublisherDisplayName>Dialectek</PublisherDisplayName>
+    <Logo>Assets\icons\medium_logo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Blackguard.App">
+      <VisualElements DisplayName="Blackguard" Logo="Assets\icons\large_logo.png" SmallLogo="Assets\icons\small_logo.png" Description="The game of Blackguard" ForegroundText="light" BackgroundColor="#00b2f0">
+        <DefaultTile ShowName="allLogos" ShortName="Blackguard" />
+        <SplashScreen Image="Assets\icons\splash.png" BackgroundColor="#2879ed" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>

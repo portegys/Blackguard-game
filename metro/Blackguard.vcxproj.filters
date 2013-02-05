@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>f17b3f45-0c23-4a61-81f7-09a13e0cf115</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>9fa5e54f-acdb-44fe-a250-97053627ee99</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\doc">
+      <UniqueIdentifier>{347b46a1-4e80-4155-a814-2d3325e4f4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\textures">
+      <UniqueIdentifier>{5f0e9437-898d-4d7c-bb75-7dd1a3d86245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\sounds">
+      <UniqueIdentifier>{22ad4dcb-2630-4eb2-87c9-2c8747861cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\icons">
+      <UniqueIdentifier>{690c6278-3600-4d3b-94ec-71d9268c45b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rogue">
+      <UniqueIdentifier>{fdd4182a-c4f1-4ed5-bcc5-54eb622e2e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{62948369-a4b7-442d-b8e3-026b45b11389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{6b8cd53e-7ff8-4e6e-9df9-6cd45c6ed818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{1eaa6a38-4fd0-4308-99e7-0436a172e928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{c35d7dd7-4466-4acb-a641-b4fe5bb8f8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages">
+      <UniqueIdentifier>{be3058bc-7c4a-4efd-8ebe-0b0ceba8a64f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Audio.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaReader.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSTextureLoader.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXBase.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\BindableBase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\BooleanNegationConverter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\BooleanToVisibilityConverter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\LayoutAwarePage.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\RichTextColumns.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\SuspensionManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneShapes.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="TextOverlay.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="RogueInterface.cpp">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\new_leve.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\command.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\global.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\main.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\sticks.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\things.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\trader.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\vers.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\weapons.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\wizard.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\xcrypt.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\armor.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\chase.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\daemon.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\daemons.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\disply.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\encumb.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\fight.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\init.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\io.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\list.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\misc.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\monsters.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\move.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\options.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\pack.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\passages.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\potions.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\pstats.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\rings.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\rip.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\rooms.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\save.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\scrolls.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rogue\state.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="ReaderWriter.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXPage.xaml.cpp" />
+    <ClCompile Include="HelpPage.xaml.cpp" />
+    <ClCompile Include="ManualPage.xaml.cpp" />
+    <ClCompile Include="MutePage.xaml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="Audio.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaReader.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffect.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXBase.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Common\BindableBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\BooleanNegationConverter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\BooleanToVisibilityConverter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LayoutAwarePage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\RichTextColumns.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\SuspensionManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneShapes.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="TextOverlay.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="RogueInterface.hpp">
+      <Filter>rogue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rogue\rogue.h">
+      <Filter>rogue</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXHelper.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="InputPaneHelper.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ReaderWriter.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXPage.xaml.h" />
+    <ClInclude Include="HelpPage.xaml.h" />
+    <ClInclude Include="ManualPage.xaml.h" />
+    <ClInclude Include="MutePage.xaml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Filter>Pages</Filter>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Blackguard.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Blackguard_TemporaryKey.pfx" />
+    <None Include="Assets\EULA">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="Blackguard_StoreKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.TXT" />
+    <Text Include="Assets\doc\blackguard.txt">
+      <Filter>Assets\doc</Filter>
+    </Text>
+    <Text Include="Assets\character_colors.txt">
+      <Filter>Assets</Filter>
+    </Text>
+    <Text Include="Common\ReadMe.txt">
+      <Filter>Common</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\icons\large_logo.png">
+      <Filter>Assets\icons</Filter>
+    </Image>
+    <Image Include="Assets\icons\logo.png">
+      <Filter>Assets\icons</Filter>
+    </Image>
+    <Image Include="Assets\icons\medium_logo.png">
+      <Filter>Assets\icons</Filter>
+    </Image>
+    <Image Include="Assets\icons\small_logo.png">
+      <Filter>Assets\icons</Filter>
+    </Image>
+    <Image Include="Assets\icons\splash.png">
+      <Filter>Assets\icons</Filter>
+    </Image>
+    <Image Include="Assets\textures\door.dds">
+      <Filter>Assets\textures</Filter>
+    </Image>
+    <Image Include="Assets\textures\floor.dds">
+      <Filter>Assets\textures</Filter>
+    </Image>
+    <Image Include="Assets\textures\keyboard.png">
+      <Filter>Assets\textures</Filter>
+    </Image>
+    <Image Include="Assets\textures\microphone_off.dds">
+      <Filter>Assets\textures</Filter>
+    </Image>
+    <Image Include="Assets\textures\microphone_on.dds">
+      <Filter>Assets\textures</Filter>
+    </Image>
+    <Image Include="Assets\textures\pack.jpg">
+      <Filter>Assets\textures</Filter>
+    </Image>
+    <Image Include="Assets\textures\wall.dds">
+      <Filter>Assets\textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\sounds\die.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\dipobject.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\eatfood.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\experienceup.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\gostairs.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\hitmonster.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\hitplayer.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\killmonster.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\opendungeon.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\pickupgold.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\pickupobject.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\quaffpotion.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\readscroll.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\throwobject.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\thunkmissile.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\winner.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+    <Media Include="Assets\sounds\zapwand.wav">
+      <Filter>Assets\sounds</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Common\StandardStyles.xaml">
+      <Filter>Common</Filter>
+    </Page>
+    <Page Include="DirectXPage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+    <Page Include="HelpPage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+    <Page Include="ManualPage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+    <Page Include="MutePage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ColoredPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ColoredVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SimplePixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SimpleVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

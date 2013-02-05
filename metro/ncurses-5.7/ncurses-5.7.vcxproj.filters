@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{dafee8a1-33f6-460d-a172-00790ffe9d3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ncurses">
+      <UniqueIdentifier>{7b9740dc-6a39-4b05-a9f8-df3af7d628ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ncurses\base">
+      <UniqueIdentifier>{a043bd49-bb0a-486e-b80b-2173f3b8fcc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ncurses\tty">
+      <UniqueIdentifier>{37da22b3-5fd3-4a89-9708-f789217d4f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ncurses\tinfo">
+      <UniqueIdentifier>{a740b0cf-3426-4090-bdd2-db6295678ef4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ncurses\codes.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\expanded.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\fallback.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\lib_keyname.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\names.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\unctrl.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\comp_captab.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\define_key.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\key_defined.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\keybound.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\keyok.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\legacy_coding.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_addch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_addstr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_beep.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_bkgd.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_box.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_chgat.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_clear.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_clearok.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_clrbot.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_clreol.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_color.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_colorset.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_delch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_delwin.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_dft_fgbg.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_echo.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_endwin.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_erase.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_flash.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_freeall.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_getch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_getstr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_hline.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_immedok.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_inchstr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_initscr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_insch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_insdel.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_insnstr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_instr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_isendwin.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_leaveok.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_mouse.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_move.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_mvwin.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_newterm.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_newwin.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_nl.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_overlay.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_pad.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_printw.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_redrawln.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_refresh.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_restart.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_scanw.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_screen.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_scroll.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_scrollok.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_scrreg.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_set_term.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slk.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkatr_set.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkatrof.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkatron.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkatrset.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkattr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkclear.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkcolor.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkinit.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slklab.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkrefr.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slkset.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_slktouch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_touch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_ungetch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_vline.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_wattroff.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_wattron.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_winch.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\lib_window.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\memmove.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\nc_panel.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\resizeterm.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\safe_sprintf.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\tries.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\use_window.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\version.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\vsscanf.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\base\wresize.c">
+      <Filter>ncurses\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\access.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\add_tries.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\alloc_entry.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\alloc_ttype.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\captoinfo.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\comp_error.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\comp_expand.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\comp_hash.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\comp_parse.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\comp_scan.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\db_iterator.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\doalloc.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\entries.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\free_ttype.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\getenv_num.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\hashed_db.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\home_terminfo.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\init_keytry.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_acs.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_baudrate.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_cur_term.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_data.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_has_cap.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_kernel.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_longname.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_napms.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_options.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_print.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_raw.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_setup.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_termcap.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_termname.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_tgoto.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_ti.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_tparm.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_tputs.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\lib_ttyflags.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\make_keys.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\name_match.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\parse_entry.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\read_entry.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\read_termcap.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\setbuf.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\strings.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\trim_sgr0.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\use_screen.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tinfo\write_entry.c">
+      <Filter>ncurses\tinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tty\hardscroll.c">
+      <Filter>ncurses\tty</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tty\hashmap.c">
+      <Filter>ncurses\tty</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tty\lib_mvcur.c">
+      <Filter>ncurses\tty</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tty\lib_tstp.c">
+      <Filter>ncurses\tty</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tty\lib_vidattr.c">
+      <Filter>ncurses\tty</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\tty\tty_update.c">
+      <Filter>ncurses\tty</Filter>
+    </ClCompile>
+    <ClCompile Include="ncurses\lib_gen.c">
+      <Filter>ncurses</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\curses.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\eti.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\form.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hashed_db.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hashsize.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mf_common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nc_alloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nc_panel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nc_tparm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ncurses_cfg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ncurses_def.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ncurses_dll.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\panel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parametrized.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\term.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\term_entry.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\termcap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\unctrl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ncurses\tty\tty_display.h">
+      <Filter>ncurses\tty</Filter>
+    </ClInclude>
+    <ClInclude Include="ncurses\tty\tty_input.h">
+      <Filter>ncurses\tty</Filter>
+    </ClInclude>
+    <ClInclude Include="ncurses\curses.priv.h">
+      <Filter>ncurses</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
