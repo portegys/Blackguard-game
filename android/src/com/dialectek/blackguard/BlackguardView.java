@@ -5,11 +5,11 @@ package com.dialectek.blackguard;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map.Entry;
 import java.util.UUID;
 
-import org.apache.http.message.BasicNameValuePair;
-
 import android.content.ActivityNotFoundException;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -312,63 +312,60 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
    // Initialize voice recognition.
    void initVoiceRecognition()
    {
-      int i;
-
-      ArrayList<BasicNameValuePair> cmdKeys = null;
-
       // Build command/key table.
       // Prepend "shift" keyword for uppercase keys.
-      cmdKeys = new ArrayList<BasicNameValuePair> ();
-      cmdKeys.add(new BasicNameValuePair("throw", "t"));
-      cmdKeys.add(new BasicNameValuePair("zap", "z"));
-      cmdKeys.add(new BasicNameValuePair("dip", "shift d"));
-      cmdKeys.add(new BasicNameValuePair("down", "shift ."));
-      cmdKeys.add(new BasicNameValuePair("up", "shift ,"));
-      cmdKeys.add(new BasicNameValuePair("search", "s"));
-      cmdKeys.add(new BasicNameValuePair("inventory", "i"));
-      cmdKeys.add(new BasicNameValuePair("pack", "i"));
-      cmdKeys.add(new BasicNameValuePair("quaff", "q"));
-      cmdKeys.add(new BasicNameValuePair("drink", "q"));
-      cmdKeys.add(new BasicNameValuePair("read", "r"));
-      cmdKeys.add(new BasicNameValuePair("eat", "e"));
-      cmdKeys.add(new BasicNameValuePair("wield", "w"));
-      cmdKeys.add(new BasicNameValuePair("wear", "shift w"));
-      cmdKeys.add(new BasicNameValuePair("take", "shift t"));
-      cmdKeys.add(new BasicNameValuePair("put", "shift p"));
-      cmdKeys.add(new BasicNameValuePair("remove", "shift r"));
-      cmdKeys.add(new BasicNameValuePair("drop", "d"));
-      cmdKeys.add(new BasicNameValuePair("encumbrance", "a"));
-      cmdKeys.add(new BasicNameValuePair("weight", "a"));
-      cmdKeys.add(new BasicNameValuePair("version", "v"));
-      cmdKeys.add(new BasicNameValuePair("show", "shift s"));
-      cmdKeys.add(new BasicNameValuePair("mute", "shift m"));
-      cmdKeys.add(new BasicNameValuePair("identity", "@"));
-      cmdKeys.add(new BasicNameValuePair("quit", "shift q"));
-      cmdKeys.add(new BasicNameValuePair("star", "shift 8"));
-      cmdKeys.add(new BasicNameValuePair("list", "shift 8"));
-      cmdKeys.add(new BasicNameValuePair("left", "l"));
-      cmdKeys.add(new BasicNameValuePair("right", "r"));
-      cmdKeys.add(new BasicNameValuePair("manual", "m"));
-      cmdKeys.add(new BasicNameValuePair("help", "shift /"));
-      cmdKeys.add(new BasicNameValuePair("return", "enter"));
-      cmdKeys.add(new BasicNameValuePair("enter", "enter"));
-      cmdKeys.add(new BasicNameValuePair("yes", "y"));
-      cmdKeys.add(new BasicNameValuePair("no", "n"));
+      ContentValues cmdKeys = new ContentValues();
+
+      cmdKeys.put("throw", "t");
+      cmdKeys.put("zap", "z");
+      cmdKeys.put("dip", "shift d");
+      cmdKeys.put("down", "shift .");
+      cmdKeys.put("up", "shift ,");
+      cmdKeys.put("search", "s");
+      cmdKeys.put("inventory", "i");
+      cmdKeys.put("pack", "i");
+      cmdKeys.put("quaff", "q");
+      cmdKeys.put("drink", "q");
+      cmdKeys.put("read", "r");
+      cmdKeys.put("eat", "e");
+      cmdKeys.put("wield", "w");
+      cmdKeys.put("wear", "shift w");
+      cmdKeys.put("take", "shift t");
+      cmdKeys.put("put", "shift p");
+      cmdKeys.put("remove", "shift r");
+      cmdKeys.put("drop", "d");
+      cmdKeys.put("encumbrance", "a");
+      cmdKeys.put("weight", "a");
+      cmdKeys.put("version", "v");
+      cmdKeys.put("show", "shift s");
+      cmdKeys.put("mute", "shift m");
+      cmdKeys.put("identity", "@");
+      cmdKeys.put("quit", "shift q");
+      cmdKeys.put("star", "shift 8");
+      cmdKeys.put("list", "shift 8");
+      cmdKeys.put("left", "l");
+      cmdKeys.put("right", "r");
+      cmdKeys.put("manual", "m");
+      cmdKeys.put("help", "shift /");
+      cmdKeys.put("return", "enter");
+      cmdKeys.put("enter", "enter");
+      cmdKeys.put("yes", "y");
+      cmdKeys.put("no", "n");
 
       // Create commands.
       voiceCommands = new ArrayList<String>();
-      for (i = 0; i < cmdKeys.size(); i++)
+      for (Entry<String, Object> entry : cmdKeys.valueSet())
       {
-         voiceCommands.add(cmdKeys.get(i).getName());
+         voiceCommands.add(entry.getKey());
       }
       Collections.sort(voiceCommands);
 
       // Create key codes.
       voiceKeyEvents = new KeyEvent[cmdKeys.size()];
-      for (i = 0; i < cmdKeys.size(); i++)
+      for (Entry<String, Object> entry : cmdKeys.valueSet())
       {
-         voiceKeyEvents[Collections.binarySearch(voiceCommands, cmdKeys.get(i).getName())] =
-            getKeyEvent(cmdKeys.get(i).getValue());
+         voiceKeyEvents[Collections.binarySearch(voiceCommands, entry.getKey())] =
+            getKeyEvent(entry.getValue().toString());
       }
    }
 

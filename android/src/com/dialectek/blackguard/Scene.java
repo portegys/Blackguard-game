@@ -10,7 +10,6 @@ import android.graphics.Typeface;
 import android.opengl.GLU;
 import android.opengl.GLUtils;
 import android.os.SystemClock;
-import android.util.FloatMath;
 import android.util.Log;
 
 import java.io.BufferedReader;
@@ -1222,7 +1221,7 @@ public class Scene
    // Normalize vector.
    void normalize(float[] v)
    {
-      float       m   = FloatMath.sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
+      float       m   = (float)Math.sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
       final float tol = 0.0000000001f;
 
       if (m <= tol)

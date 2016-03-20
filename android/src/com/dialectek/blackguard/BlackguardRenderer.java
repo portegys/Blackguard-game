@@ -400,7 +400,8 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
          llen    = windowHeight / LINES;
          llenz   = windowHeight / LINEZ;
          linebuf = new char[COLS];
-         if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+         if (context.getResources().getConfiguration().orientation ==
+             Configuration.ORIENTATION_PORTRAIT)
          {
             cols2 = (int)((float)COLS * 0.9f);
          }
