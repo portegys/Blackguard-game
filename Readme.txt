@@ -6,5 +6,7 @@ Directories:
 
 - android: Android app.
 - metro: Windows Store app.
+- ios: Marmalade.
 
-Build Android with eclipse (with Android and NDK SDKs), Windows Store app with Visual Studio 12.
+Build tools: make, eclipse (with Android and CDT additions), Visual Studio 13, and Marmalade (IOS).
+
