@@ -94,12 +94,13 @@ char **envp;
 
 #ifndef WIN32
 	playuid = getuid();
-
+#ifndef ANDROID
 	if (setuid(playuid) < 0) {
 		printf("Cannot change to effective uid: %d\n", playuid);
 		exit(1);
 	}
 	playgid = getgid();
+#endif
 #endif
 
 	/* check for print-score option */
@@ -232,7 +233,7 @@ char **envp;
 
 #if ANDROID || METRO
 #ifdef ANDROID
-    if (access(file_name, R_OK) != -1)
+    if (access(file_name, 4) != -1)
 		if(!restore(file_name, envp)) /* NOTE: NEVER RETURNS */
 			reset();
 #else

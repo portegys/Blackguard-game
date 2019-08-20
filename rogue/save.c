@@ -141,8 +141,10 @@ dosave()
 
 	ignore();
 #ifndef WIN32
+#ifndef ANDROID
 	setuid(playuid);
 	setgid(playgid);
+#endif
 #endif
 	umask(022);
 
@@ -359,8 +361,10 @@ char *file, **envp;
 			/* set id to unlink file */
 			if(pid == 0)
 			{
+#ifndef ANDROID
 				setuid(playuid);
 				setgid(playgid);
+#endif
 				unlink(file);
 				exit(0);
 			}

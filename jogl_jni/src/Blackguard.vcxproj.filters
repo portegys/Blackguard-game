@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="rogue">
+      <UniqueIdentifier>{e06fec6b-e8c4-46df-9403-b2bb019163a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\rogue\armor.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\chase.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\command.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\daemon.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\daemons.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\disply.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\encumb.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\fight.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\global.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\init.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\io.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\list.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\main.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\misc.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\monsters.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\move.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\new_leve.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\options.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\pack.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\passages.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\potions.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\pstats.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\rings.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\rip.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\rooms.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\save.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\scrolls.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\state.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\sticks.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\things.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\trader.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\vers.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\weapons.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\wizard.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\xcrypt.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="Blackguard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\rogue\rogue.h">
+      <Filter>rogue</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="blackguard\Blackguard.java" />
+    <None Include="blackguard\Scene.java" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,389 @@
+﻿Build started 12/15/2010 9:47:35 PM.
+     1>Project "C:\Users\Tom\Documents\games\roguelike\blackguard\jogl_jni\src\Blackguard.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Blackguard.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\Blackguard.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       PreBuildEvent:
+         javac -d ../bin -cp "../lib/jogl.all.jar;../lib/nativewindow.all.jar;../lib/gluegen-rt.jar;../lib/newt.all.jar" blackguard/*.java && javah -jni -classpath ../bin blackguard.Blackguard && javah -jni -classpath ../bin blackguard.Scene
+         :VCEnd
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include\win32 /I"C:\Progra~1\Java\jdk1.6.0_22\include" /I"C:\Progra~1\Java\jdk1.6.0_22\include\win32" /ZI /nologo /W3 /WX- /Od /Oy- /D BLACKGUARD /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\rogue\armor.c ..\..\rogue\chase.c ..\..\rogue\command.c ..\..\rogue\daemon.c ..\..\rogue\daemons.c ..\..\rogue\disply.c ..\..\rogue\encumb.c ..\..\rogue\fight.c ..\..\rogue\global.c ..\..\rogue\init.c ..\..\rogue\io.c ..\..\rogue\list.c ..\..\rogue\main.c ..\..\rogue\misc.c ..\..\rogue\monsters.c ..\..\rogue\move.c ..\..\rogue\new_leve.c ..\..\rogue\options.c ..\..\rogue\pack.c ..\..\rogue\passages.c ..\..\rogue\potions.c ..\..\rogue\pstats.c ..\..\rogue\rings.c ..\..\rogue\rip.c ..\..\rogue\rooms.c ..\..\rogue\save.c ..\..\rogue\scrolls.c ..\..\rogue\state.c ..\..\rogue\sticks.c ..\..\rogue\things.c ..\..\rogue\trader.c ..\..\rogue\vers.c ..\..\rogue\weapons.c ..\..\rogue\wizard.c ..\..\rogue\xcrypt.c
+         xcrypt.c
+         wizard.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\wizard.c(325): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\wizard.c(399): warning C4013: 'strcmp' undefined; assuming extern returning int
+         weapons.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\weapons.c(53): warning C4013: 'notifyThrowObject' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\weapons.c(167): warning C4013: 'strcpy' undefined; assuming extern returning int
+         vers.c
+         trader.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\trader.c(93): warning C4013: 'strcpy' undefined; assuming extern returning int
+         things.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\things.c(40): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\things.c(46): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\things.c(96): warning C4013: 'strcat' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\things.c(219): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+         sticks.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\sticks.c(29): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\sticks.c(33): warning C4013: 'strcmp' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\sticks.c(93): warning C4013: 'notifyZapWand' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\sticks.c(223): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\sticks.c(275): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+         state.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(115): warning C4013: 'read' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(424): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(979): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(981): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(983): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(985): warning C4133: '==' : incompatible types - from 'void (__cdecl *)(void)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(987): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(989): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(991): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(993): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(995): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(997): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(999): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1001): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1003): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1005): warning C4133: '==' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1007): warning C4133: '==' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1009): warning C4133: '==' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1011): warning C4133: '==' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1065): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1067): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1069): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1071): warning C4133: '=' : incompatible types - from 'void (__cdecl *)(void)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1073): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1075): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1077): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1079): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1081): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1083): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1085): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1087): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1089): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1091): warning C4133: '=' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1093): warning C4133: '=' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1095): warning C4133: '=' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1097): warning C4133: '=' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)()'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1395): warning C4013: 'strcmp' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\state.c(1499): warning C4013: 'memset' undefined; assuming extern returning int
+         scrolls.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\scrolls.c(41): warning C4013: 'notifyReadScroll' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\scrolls.c(160): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\scrolls.c(461): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\scrolls.c(464): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\scrolls.c(28): warning C4101: 'titem' : unreferenced local variable
+         save.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(84): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(58): warning C4101: 'savef' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(147): warning C4013: 'umask' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(153): warning C4013: '_setmode' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(178): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(723) : see declaration of 'fileno'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(180): warning C4013: 'write' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(181): warning C4013: 'lseek' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(183): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(192): warning C4013: 'close' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(219): warning C4013: 'open' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(229): warning C4013: 'strcmp' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(311): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _unlink. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(299) : see declaration of 'unlink'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(356): warning C4013: 'getpid' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(210): warning C4101: 'ret_status' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\save.c(209): warning C4101: 'pid' : unreferenced local variable
+         rooms.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rooms.c(28): warning C4101: 'mp' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rooms.c(26): warning C4101: 'item' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rooms.c(27): warning C4101: 'tp' : unreferenced local variable
+         rip.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\include\win32\curses.h(160): warning C4005: 'MOUSE_MOVED' : macro redefinition
+                 c:\program files\microsoft sdks\windows\v7.0a\include\wincon.h(101) : see previous definition of 'MOUSE_MOVED'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\time.h(32): warning C4068: unknown pragma
+     1>c:\program files\microsoft visual studio 10.0\vc\include\time.h(282): warning C4068: unknown pragma
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rip.c(69): warning C4013: 'notifyDie' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rip.c(149): warning C4013: 'open' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rip.c(154): warning C4996: 'fdopen': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fdopen. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(721) : see declaration of 'fdopen'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rip.c(304): warning C4013: 'close' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rip.c(384): warning C4013: 'notifyWinner' undefined; assuming extern returning int
+         rings.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(107): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(107): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(126): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(129): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(197): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(197): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(204): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(204): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(218): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(218): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\rings.c(287): warning C4101: 'hand' : unreferenced local variable
+         pstats.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pstats.c(152): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pstats.c(152): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pstats.c(157): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pstats.c(157): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pstats.c(159): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pstats.c(159): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+         potions.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(49): warning C4013: 'notifyQuaffPotion' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(61): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(61): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(63): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(63): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(133): warning C4133: 'function' : incompatible types - from 'char *' to 'object *'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(167): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(167): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(171): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(171): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(193): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(193): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(208): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(208): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(210): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(210): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(228): warning C4028: formal parameter 1 different from declaration
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(228): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(242): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(242): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(254): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(254): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(256): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(256): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(273): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(273): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(275): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(275): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(321): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\potions.c(324): warning C4013: 'strlen' undefined; assuming extern returning int
+         passages.c
+         pack.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pack.c(236): warning C4013: 'notifyPickupGold' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pack.c(248): warning C4013: 'notifyPickupObject' undefined; assuming extern returning int
+         options.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\options.c(115): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\options.c(153): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\options.c(198): warning C4013: 'strncmp' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\options.c(200): warning C4013: 'memset' undefined; assuming extern returning int
+         new_leve.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\new_leve.c(133): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\new_leve.c(23): warning C4101: 'i' : unreferenced local variable
+         move.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(213): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(274): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(276): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(280): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(332): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(357): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(403): warning C4013: 'strcat' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(350): warning C4101: 'mon' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\move.c(575): warning C4013: 'notifyDipObject' undefined; assuming extern returning int
+         Generating Code...
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\pstats.c(371): warning C4715: 'hungdam' : not all control paths return a value
+         Compiling...
+         monsters.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(103): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(144): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(146): warning C4244: '=' : conversion from 'float' to 'long', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(252): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(252): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(254): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(254): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(264): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(287): warning C4101: 'ii' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\monsters.c(341): warning C4013: 'strcpy' undefined; assuming extern returning int
+         misc.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\misc.c(134): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\misc.c(265): warning C4013: 'notifyEatFood' undefined; assuming extern returning int
+         main.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\include\win32\curses.h(160): warning C4005: 'MOUSE_MOVED' : macro redefinition
+                 c:\program files\microsoft sdks\windows\v7.0a\include\wincon.h(101) : see previous definition of 'MOUSE_MOVED'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\setjmp.h(37): warning C4068: unknown pragma
+     1>c:\program files\microsoft visual studio 10.0\vc\include\setjmp.h(258): warning C4068: unknown pragma
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(210): warning C4013: 'getpid' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(213): warning C4013: 'notifyOpenDungeon' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(250): warning C4996: 'putenv': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _putenv. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdlib.h(869) : see declaration of 'putenv'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(251): warning C4996: 'putenv': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _putenv. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdlib.h(869) : see declaration of 'putenv'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(305): warning C4028: formal parameter 1 different from declaration
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(305): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(306): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(306): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(307): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(307): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(308): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)(void)' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(309): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(309): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\main.c(58): warning C4101: 'pw' : unreferenced local variable
+         list.c
+         io.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\io.c(68): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\io.c(90): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\io.c(132): warning C4101: 'c' : unreferenced local variable
+         init.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\init.c(131): warning C4101: 'str' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\init.c(175): warning C4013: 'strlen' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\init.c(178): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\init.c(193): warning C4101: 'str' : unreferenced local variable
+         global.c
+         fight.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(85): warning C4013: 'notifyHitMonster' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(109): warning C4013: 'notifyKilled' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(292): warning C4028: formal parameter 1 different from declaration
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(292): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(319): warning C4028: formal parameter 1 different from declaration
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(319): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(330): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(330): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(334): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(334): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(395): warning C4013: 'notifyLevelUp' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(439): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(532): warning C4013: 'strcat' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(550): warning C4013: 'notifyHitPlayer' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(568): warning C4013: 'notifyMissMonster' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\fight.c(570): warning C4013: 'notifyMissPlayer' undefined; assuming extern returning int
+         encumb.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\encumb.c(132): warning C4013: 'strcmp' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\encumb.c(211): warning C4028: formal parameter 1 different from declaration
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\encumb.c(211): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\encumb.c(213): warning C4028: formal parameter 1 different from declaration
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\encumb.c(213): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)(int)' to 'int (__cdecl *)(void)'
+         disply.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\disply.c(32): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\disply.c(62): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\disply.c(82): warning C4101: 'ch' : unreferenced local variable
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\disply.c(112): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\disply.c(114): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+         daemons.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(65): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(65): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(81): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(81): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(82): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(82): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(215): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemons.c(215): warning C4133: 'function' : incompatible types - from 'void (__cdecl *)()' to 'int (__cdecl *)(void)'
+         daemon.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemon.c(91): warning C4113: 'int (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\daemon.c(118): warning C4113: 'int (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+         command.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\command.c(580): warning C4013: 'notifyStairs' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\command.c(724): warning C4013: 'strcpy' undefined; assuming extern returning int
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\command.c(726): warning C4013: 'strlen' undefined; assuming extern returning int
+         chase.c
+     1>c:\users\tom\documents\games\roguelike\blackguard\rogue\chase.c(205): warning C4244: '=' : conversion from 'chtype' to 'char', possible loss of data
+         armor.c
+         Generating Code...
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include\win32 /I"C:\Progra~1\Java\jdk1.6.0_22\include" /I"C:\Progra~1\Java\jdk1.6.0_22\include\win32" /ZI /nologo /W3 /WX- /Od /Oy- /D BLACKGUARD /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Blackguard.cpp
+         Blackguard.cpp
+     1>c:\users\tom\documents\games\roguelike\blackguard\include\win32\curses.h(160): warning C4005: 'MOUSE_MOVED' : macro redefinition
+                 c:\program files\microsoft sdks\windows\v7.0a\include\wincon.h(101) : see previous definition of 'MOUSE_MOVED'
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(86): warning C4273: '_environ' : inconsistent dll linkage
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdlib.h(299) : see previous definition of '_environ'
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(206): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(219): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(235): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(248): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(426): warning C4244: 'return' : conversion from 'chtype' to 'jchar', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(437): warning C4244: 'return' : conversion from 'chtype' to 'jchar', possible loss of data
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(492): warning C4800: 'jboolean' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(515): warning C4800: 'jboolean' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\tom\documents\games\roguelike\blackguard\jogl_jni\src\blackguard.cpp(651): warning C4244: '=' : conversion from 'jchar' to 'char', possible loss of data
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Blackguard.dll.embed.manifest.res" Debug\Blackguard_manifest.rc 
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Tom\Documents\games\roguelike\blackguard\jogl_jni\src\Debug\Blackguard.dll) does not match the Linker's OutputFile property value (C:\Users\Tom\Documents\games\roguelike\blackguard\jogl_jni\bin\Blackguard.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Blackguard.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\win32 pdcurses.lib pthreadVC2.lib fmodex_vc.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Blackguard.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Tom\Documents\games\roguelike\blackguard\jogl_jni\src\Debug\Blackguard.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\Blackguard.lib" /MACHINE:X86 /DLL Debug\Blackguard.dll.embed.manifest.res
+         Debug\armor.obj
+         Debug\chase.obj
+         Debug\command.obj
+         Debug\daemon.obj
+         Debug\daemons.obj
+         Debug\disply.obj
+         Debug\encumb.obj
+         Debug\fight.obj
+         Debug\global.obj
+         Debug\init.obj
+         Debug\io.obj
+         Debug\list.obj
+         Debug\main.obj
+         Debug\misc.obj
+         Debug\monsters.obj
+         Debug\move.obj
+         Debug\new_leve.obj
+         Debug\options.obj
+         Debug\pack.obj
+         Debug\passages.obj
+         Debug\potions.obj
+         Debug\pstats.obj
+         Debug\rings.obj
+         Debug\rip.obj
+         Debug\rooms.obj
+         Debug\save.obj
+         Debug\scrolls.obj
+         Debug\state.obj
+         Debug\sticks.obj
+         Debug\things.obj
+         Debug\trader.obj
+         Debug\vers.obj
+         Debug\weapons.obj
+         Debug\wizard.obj
+         Debug\xcrypt.obj
+         Debug\Blackguard.obj
+            Creating library Debug\Blackguard.lib and object Debug\Blackguard.exp
+       Manifest:
+         Deleting file "Debug\Blackguard.dll.embed.manifest".
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Blackguard.dll.embed.manifest" /manifest Debug\Blackguard.dll.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Blackguard.dll.embed.manifest.res" Debug\Blackguard_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Blackguard.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\win32 pdcurses.lib pthreadVC2.lib fmodex_vc.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Blackguard.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Tom\Documents\games\roguelike\blackguard\jogl_jni\src\Debug\Blackguard.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\Blackguard.lib" /MACHINE:X86 /DLL Debug\Blackguard.dll.embed.manifest.res
+         Debug\armor.obj
+         Debug\chase.obj
+         Debug\command.obj
+         Debug\daemon.obj
+         Debug\daemons.obj
+         Debug\disply.obj
+         Debug\encumb.obj
+         Debug\fight.obj
+         Debug\global.obj
+         Debug\init.obj
+         Debug\io.obj
+         Debug\list.obj
+         Debug\main.obj
+         Debug\misc.obj
+         Debug\monsters.obj
+         Debug\move.obj
+         Debug\new_leve.obj
+         Debug\options.obj
+         Debug\pack.obj
+         Debug\passages.obj
+         Debug\potions.obj
+         Debug\pstats.obj
+         Debug\rings.obj
+         Debug\rip.obj
+         Debug\rooms.obj
+         Debug\save.obj
+         Debug\scrolls.obj
+         Debug\state.obj
+         Debug\sticks.obj
+         Debug\things.obj
+         Debug\trader.obj
+         Debug\vers.obj
+         Debug\weapons.obj
+         Debug\wizard.obj
+         Debug\xcrypt.obj
+         Debug\Blackguard.obj
+            Creating library Debug\Blackguard.lib and object Debug\Blackguard.exp
+         Blackguard.vcxproj -> C:\Users\Tom\Documents\games\roguelike\blackguard\jogl_jni\src\Debug\Blackguard.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\Blackguard.unsuccessfulbuild".
+         Touching "Debug\Blackguard.lastbuildstate".
+     1>Done Building Project "C:\Users\Tom\Documents\games\roguelike\blackguard\jogl_jni\src\Blackguard.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.95

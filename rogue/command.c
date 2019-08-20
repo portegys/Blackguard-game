@@ -752,8 +752,10 @@ shell()
 	while((pid = fork()) < 0)
 		sleep(1);
 	if (pid == 0) {
+#ifndef ANDROID
 		setuid(playuid);	/* Set back to original user */
 		setgid(playgid);
+#endif
 		execl(sh == NULL ? "/bin/sh" : sh, "shell", "-i", 0);
 		perror("No shelly");
 		byebye(-1);

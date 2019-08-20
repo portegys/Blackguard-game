@@ -1,0 +1,2 @@
+^C:\USERS\TOMPO_000\DOCUMENTS\GAMES\ROGUELIKE\BLACKGUARD\IOS\BLACKGUARD\BLACKGUARD.MKB
+"C:\Marmalade\8.0\s3e\python\python.exe" "C:\Marmalade\8.0\s3e\makefile_builder\mkb.py" "c:/Users/tompo_000/Documents/games/roguelike/Blackguard/ios/Blackguard/Blackguard.mkb" "--buildenv=VC12" "--default-buildenv=vc12" --msvc-project

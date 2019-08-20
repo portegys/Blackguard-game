@@ -53,6 +53,10 @@ void ::Blackguard::DirectXPage::Connect(int connectionId, Platform::Object^ targ
             ref new ::Windows::UI::Xaml::Controls::TextChangedEventHandler(this, (void (::Blackguard::DirectXPage::*)(Platform::Object^, Windows::UI::Xaml::Controls::TextChangedEventArgs^))&DirectXPage::KeyboardTextChanged);
         (safe_cast<::Windows::UI::Xaml::UIElement^>(target))->KeyDown +=
             ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::Blackguard::DirectXPage::*)(Platform::Object^, Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&DirectXPage::KeyboardKeyDown);
+        (safe_cast<::Windows::UI::Xaml::UIElement^>(target))->GotFocus +=
+            ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Blackguard::DirectXPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::KeyboardIconGotFocus);
+        (safe_cast<::Windows::UI::Xaml::UIElement^>(target))->LostFocus +=
+            ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Blackguard::DirectXPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::KeyboardIconLostFocus);
         break;
     case 3:
         (safe_cast<::Windows::UI::Xaml::Controls::Primitives::ButtonBase^>(target))->Click +=

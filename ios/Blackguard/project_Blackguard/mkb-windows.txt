@@ -1,0 +1,1 @@
+VC12;build_blackguard_vc12;

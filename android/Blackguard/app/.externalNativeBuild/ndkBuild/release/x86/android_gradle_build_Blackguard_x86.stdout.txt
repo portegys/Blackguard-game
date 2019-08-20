@@ -1,0 +1,1 @@
+make: `C:/Blackguard/android/Blackguard/app/build/intermediates/ndkBuild/release/obj/local/x86/libBlackguard.so' is up to date.

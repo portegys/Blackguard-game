@@ -8,7 +8,7 @@
     mc:Ignorable="d">
     <SwapChainBackgroundPanel x:ConnectionId='1' x:Name="SwapChainPanel"                                                                                                     >
         <Page>
-            <TextBox x:ConnectionId='2' x:Name="KeyboardTextBox" Visibility="Collapsed"                                                             TextWrapping="Wrap" BorderThickness="0" Height="50" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" >
+            <TextBox x:ConnectionId='2' x:Name="KeyboardTextBox" Visibility="Collapsed"                                                                                                                               TextWrapping="Wrap" BorderThickness="0" Height="50" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" >
                 <TextBox.Background>
                     <ImageBrush ImageSource="Assets/textures/keyboard.png" Stretch="Fill" />
                 </TextBox.Background>

@@ -1,0 +1,767 @@
+{
+  "buildFiles": [
+    "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\Android.mk"
+  ],
+  "cleanCommands": [
+    "C:\\AndroidStudio\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dC:/Blackguard/android/Blackguard/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Blackguard\\android\\Blackguard\\app\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "Blackguard-debug-armeabi-v7a": {
+      "buildCommand": "C:\\AndroidStudio\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dC:/Blackguard/android/Blackguard/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Blackguard\\android\\Blackguard\\app\\build\\intermediates\\ndkBuild\\debug\\lib C:/Blackguard/android/Blackguard/app/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libBlackguard.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "Blackguard",
+      "files": [
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\armor.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\chase.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\command.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\daemon.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\daemons.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\disply.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\encumb.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\fight.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\global.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\init.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\io.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\list.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\main.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\misc.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\monsters.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\move.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\new_leve.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\options.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\pack.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\passages.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\potions.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\pstats.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\rings.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\rip.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\rooms.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\save.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\scrolls.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\state.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\sticks.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\things.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\trader.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\vers.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\weapons.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\wizard.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\..\\..\\..\\rogue\\xcrypt.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\define_key.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\key_defined.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\keybound.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\keyok.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\legacy_coding.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_addch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_addstr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_beep.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_bkgd.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_box.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_chgat.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_clear.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_clearok.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_clrbot.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_clreol.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_color.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_colorset.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_delch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_delwin.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_dft_fgbg.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_echo.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_endwin.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_erase.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_flash.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_freeall.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_getch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_getstr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_hline.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_immedok.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_inchstr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_initscr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_insch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_insdel.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_insnstr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_instr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_isendwin.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_leaveok.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_mouse.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_move.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_mvwin.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_newterm.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_newwin.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_nl.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_overlay.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_pad.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_printw.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_redrawln.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_refresh.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_restart.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_scanw.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_screen.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_scroll.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_scrollok.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_scrreg.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_set_term.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slk.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkatr_set.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkatrof.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkatron.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkatrset.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkattr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkclear.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkcolor.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkinit.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slklab.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkrefr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slkset.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_slktouch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_touch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_ungetch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_vline.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_wattroff.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_wattron.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_winch.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\lib_window.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\memmove.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\nc_panel.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\resizeterm.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\safe_sprintf.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\tries.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\use_window.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\version.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\vsscanf.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\base\\wresize.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\codes.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\comp_captab.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\expanded.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\fallback.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\lib_gen.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\lib_keyname.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\names.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\access.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\add_tries.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\alloc_entry.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\alloc_ttype.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\captoinfo.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\comp_error.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\comp_expand.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\comp_hash.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\comp_parse.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\comp_scan.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\db_iterator.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\doalloc.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\entries.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\free_ttype.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\getenv_num.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\hashed_db.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\home_terminfo.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\init_keytry.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_acs.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_baudrate.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_cur_term.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_data.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_has_cap.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_kernel.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_longname.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_napms.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_options.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_print.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_raw.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_setup.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_termcap.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_termname.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_tgoto.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_ti.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_tparm.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_tputs.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\lib_ttyflags.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\name_match.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\parse_entry.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\read_entry.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\read_termcap.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\setbuf.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\strings.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\trim_sgr0.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\use_screen.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tinfo\\write_entry.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\trace\\lib_trace.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\trace\\varargs.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\trace\\visbuf.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tty\\hardscroll.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tty\\hashmap.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tty\\lib_mvcur.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tty\\lib_tstp.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tty\\lib_twait.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tty\\lib_vidattr.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\tty\\tty_update.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\..\\..\\..\\ncurses-5.7\\ncurses\\unctrl.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\Blackguard.cpp",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/AndroidStudio/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fno-exceptions -fno-rtti -fpic -march\u003darmv7-a -mthumb -O0 -UNDEBUG -fno-limit-debug-info -Incurses-5.7/include -Incurses-5.7/ncurses -IC:/AndroidStudio/ndk-bundle/build//../sources/cxx-stl/system/include -IC:/Blackguard/android/Blackguard/app/src/main/jni -DANDROID -DBLACKGUARD -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        }
+      ],
+      "output": "C:\\Blackguard\\android\\Blackguard\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi-v7a\\libBlackguard.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cCompilerExecutable": "C:\\AndroidStudio\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\AndroidStudio\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

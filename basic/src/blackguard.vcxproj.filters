@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="blackguard.cpp" />
+    <ClCompile Include="scene\scene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\texture.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\glbmp.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\gettime.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\armor.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\chase.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\command.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\daemon.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\daemons.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\disply.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\encumb.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\fight.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\global.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\init.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\io.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\list.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\main.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\misc.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\monsters.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\move.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\new_leve.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\options.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\pack.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\passages.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\potions.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\pstats.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\rings.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\rip.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\rooms.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\save.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\scrolls.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\state.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\sticks.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\things.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\trader.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\vers.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\weapons.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\wizard.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rogue\xcrypt.c">
+      <Filter>rogue</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scene\scene.hpp">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\texture.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\vector.hpp">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\glbmp.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\gettime.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rogue\rogue.h">
+      <Filter>rogue</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="rogue">
+      <UniqueIdentifier>{6c5ad9cb-7fd4-43ff-a7a2-d2291ca017d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{9fb4f714-c2e2-43e0-8d45-44b3b834c4e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
