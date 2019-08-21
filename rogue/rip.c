@@ -102,7 +102,7 @@ static struct sc_ent {
 #endif
 	unsigned char sc_monster;       /* killer */
 	int sc_explvl;			/* experience level */
-	long int sc_exppts;		/* experience points */
+	int sc_exppts;		/* experience points */
 	time_t sc_date;			/* time this score was posted */
 } top_ten[10];
 
@@ -201,13 +201,13 @@ int amount, aflag;
             encread((char *) &top_ten[i].sc_name, LINLEN, fd);
             encread((char *) scoreline, 100, fd);
 #ifdef WIN32
-            sscanf(scoreline, " %d %d %d %u %d %ld %lx \n",
+            sscanf(scoreline, " %d %d %d %u %d %d %lx \n",
                 &top_ten[i].sc_score,   &top_ten[i].sc_flags,
                 &top_ten[i].sc_level,
                 &mon,                   &top_ten[i].sc_explvl,
                 &top_ten[i].sc_exppts,  &top_ten[i].sc_date);
 #else
-            sscanf(scoreline, " %d %d %d %d %u %d %ld %lx \n",
+            sscanf(scoreline, " %d %d %d %d %u %d %d %lx \n",
                 &top_ten[i].sc_score,   &top_ten[i].sc_flags,
                 &top_ten[i].sc_level,   &top_ten[i].sc_uid,
                 &mon,                   &top_ten[i].sc_explvl,
@@ -248,13 +248,13 @@ int amount, aflag;
             memset(scoreline,0,100);
             encwrite((char *) top_ten[i].sc_name, LINLEN, outf);
 #ifdef WIN32
-            sprintf(scoreline, " %d %d %d %u %d %ld %lx \n",
+            sprintf(scoreline, " %d %d %d %u %d %d %lx \n",
                 top_ten[i].sc_score, top_ten[i].sc_flags,
                 top_ten[i].sc_level,
                 top_ten[i].sc_monster, top_ten[i].sc_explvl,
                 top_ten[i].sc_exppts, top_ten[i].sc_date);
 #else
-            sprintf(scoreline, " %d %d %d %d %u %d %ld %lx \n",
+            sprintf(scoreline, " %d %d %d %d %u %d %d %lx \n",
                 top_ten[i].sc_score, top_ten[i].sc_flags,
                 top_ten[i].sc_level, top_ten[i].sc_uid,
                 top_ten[i].sc_monster, top_ten[i].sc_explvl,
@@ -321,13 +321,13 @@ int showname;
             encread((char *) &top_ten[i].sc_name, LINLEN, fd);
             encread((char *) scoreline, 100, fd);
 #ifdef WIN32
-            sscanf(scoreline, " %d %d %d %u %d %ld %lx \n",
+            sscanf(scoreline, " %d %d %d %u %d %d %lx \n",
                 &top_ten[i].sc_score,   &top_ten[i].sc_flags,
                 &top_ten[i].sc_level,
                 &mon,                   &top_ten[i].sc_explvl,
                 &top_ten[i].sc_exppts,  &top_ten[i].sc_date);
 #else
-            sscanf(scoreline, " %d %d %d %d %u %d %ld %lx \n",
+            sscanf(scoreline, " %d %d %d %d %u %d %d %lx \n",
                 &top_ten[i].sc_score,   &top_ten[i].sc_flags,
                 &top_ten[i].sc_level,   &top_ten[i].sc_uid,
                 &mon,                   &top_ten[i].sc_explvl,
@@ -367,10 +367,10 @@ int showname;
 #endif
 			}
 #ifdef BLACKGUARD
-			sprintf(buf," [Exp: %d/%ld]",scp->sc_explvl,scp->sc_exppts);
+			sprintf(buf," [Exp: %d/%d]",scp->sc_explvl,scp->sc_exppts);
 			addstr(buf);
 #else
-			printf(" [Exp: %d/%ld]",scp->sc_explvl,scp->sc_exppts);
+			printf(" [Exp: %d/%d]",scp->sc_explvl,scp->sc_exppts);
 #endif
 			if (showname) {
 #ifdef WIN32
@@ -428,13 +428,13 @@ showscores()
             encread((char *) &top_ten[i].sc_name, LINLEN, fd);
             encread((char *) scoreline, 100, fd);
 #ifdef WIN32
-            sscanf(scoreline, " %d %d %d %u %d %ld %lx \n",
+            sscanf(scoreline, " %d %d %d %u %d %d %lx \n",
                 &top_ten[i].sc_score,   &top_ten[i].sc_flags,
                 &top_ten[i].sc_level,
                 &mon,                   &top_ten[i].sc_explvl,
                 &top_ten[i].sc_exppts,  &top_ten[i].sc_date);
 #else
-            sscanf(scoreline, " %d %d %d %d %u %d %ld %lx \n",
+            sscanf(scoreline, " %d %d %d %d %u %d %d %lx \n",
                 &top_ten[i].sc_score,   &top_ten[i].sc_flags,
                 &top_ten[i].sc_level,   &top_ten[i].sc_uid,
                 &mon,                   &top_ten[i].sc_explvl,
@@ -457,7 +457,7 @@ showscores()
 				killer = killname(scp->sc_monster);
 				wprintw(hw, " by a%s %s",vowelstr(killer), killer);
 			}
-			wprintw(hw," [Exp: %d/%ld]\n",scp->sc_explvl,scp->sc_exppts);
+			wprintw(hw," [Exp: %d/%d]\n",scp->sc_explvl,scp->sc_exppts);
         		if (++cnt >= (LINEZ / 2) && scp < &top_ten[9])
                         {
                             scp2 = scp; scp2++;

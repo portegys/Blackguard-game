@@ -256,7 +256,7 @@ struct room *rp;
 int
 rf_on(rm, bit)
 struct room *rm;
-long bit;
+unsigned int bit;
 {
 	return (rm->r_flags & bit);
 }

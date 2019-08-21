@@ -224,7 +224,7 @@ struct thing *mp;
 					player.t_flags |= ISHELD;
 					sprintf(monsters[midx('F')].m_stats.s_dmg,"%dd1",++fung_hit);
 				when 'L': {
-					long lastpurse;
+					int lastpurse;
 					struct linked_list *lep;
 
 					lastpurse = purse;

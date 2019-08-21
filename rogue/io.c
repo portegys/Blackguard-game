@@ -176,9 +176,9 @@ int fromfuse;
 	}
 #if ANDROID || METRO
 	if (stre->a_str < stmx->a_str)
-		sprintf(buf, "Str: %2d(*%2d)", stef->a_str, stre->a_str);
+		sprintf(buf, "  Str: %2d(*%2d)", stef->a_str, stre->a_str);
 	else
-		sprintf(buf, "Str: %2d(%2d)", stef->a_str, stre->a_str);
+		sprintf(buf, "  Str: %2d(%2d)", stef->a_str, stre->a_str);
 #else
 	if (stre->a_str < stmx->a_str)
 		ch = '*';
@@ -232,7 +232,7 @@ int fromfuse;
 	pb = &buf[strlen(buf)];
 	sprintf(pb, hwidth, him->s_hpt, him->s_maxhp);
 	pb = &buf[strlen(buf)];
-	sprintf(pb,"  Ac: %-2d  Exp: %d/%ld",cur_armor == NULL ? him->s_arm :
+	sprintf(pb,"  Ac: %-2d  Exp: %d/%d",cur_armor == NULL ? him->s_arm :
 	  cur_armor->o_ac, him->s_lvl, him->s_exp);
 	carwght = (packvol * 100) / V_PACK;
 	pb = &buf[strlen(buf)];

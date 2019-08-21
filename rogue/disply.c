@@ -134,7 +134,7 @@ int y, x;
  */
 int
 pl_on(what)
-long what;
+unsigned int what;
 {
 	return (player.t_flags & what);
 }
@@ -146,7 +146,7 @@ long what;
  */
 int
 pl_off(what)
-long what;
+unsigned int what;
 {
 	return (!(player.t_flags & what));
 }
@@ -159,7 +159,7 @@ long what;
 int
 o_on(what,bit)
 struct object *what;
-long bit;
+unsigned int bit;
 {
 	reg int flag;
 
@@ -177,7 +177,7 @@ long bit;
 int
 o_off(what,bit)
 struct object *what;
-long bit;
+unsigned int bit;
 {
 	reg int flag;
 
@@ -195,7 +195,7 @@ long bit;
 void
 setoflg(what,bit)
 struct object *what;
-long bit;
+unsigned int bit;
 {
 	what->o_flags |= bit;
 }
@@ -208,7 +208,7 @@ long bit;
 void
 resoflg(what,bit)
 struct object *what;
-long bit;
+unsigned int bit;
 {
 	what->o_flags &= ~bit;
 }

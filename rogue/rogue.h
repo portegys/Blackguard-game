@@ -684,7 +684,7 @@ struct init_armor {
 struct init_weps {
     char *w_dam;		/* hit damage */
     char *w_hrl;		/* hurl damage */
-    int  w_flags;		/* flags */
+    unsigned int  w_flags;		/* flags */
     int  w_wght;		/* weight of weapon */
 	int  w_vol;			/* volume of weapon */
     char w_launch;		/* need to launch it */
@@ -701,7 +701,7 @@ struct room {
 	struct coord r_exit[4];	/* Where the exits are */
 	struct room *r_ptr[4];	/* this exits' link to next rm */
 	int r_goldval;			/* How much the gold is worth */
-	int r_flags;			/* Info about the room */
+	unsigned int r_flags;			/* Info about the room */
 	int r_nexits;			/* Number of exits */
 };
 
@@ -711,7 +711,7 @@ struct room {
 struct trap {
 	struct coord tr_pos;	/* Where trap is */
 	struct coord tr_goto;	/* where trap tranports to (if any) */
-	int tr_flags;			/* Info about trap */
+	unsigned int tr_flags;			/* Info about trap */
 	char tr_type;			/* What kind of trap */
 };
 
@@ -731,7 +731,7 @@ struct real {
 struct stats {
 	struct real s_re;	/* True ability */
 	struct real s_ef;	/* Effective ability */
-	long s_exp;			/* Experience */
+	int s_exp;			/* Experience */
 	int s_lvl;			/* Level of mastery */
 	int s_arm;			/* Armor class */
 	int s_hpt;			/* Hit points */
@@ -751,7 +751,7 @@ struct thing {
 	struct coord *t_dest;		/* Where it is running to */
 	struct linked_list *t_pack;	/* What the thing is carrying */
 	struct room *t_room;		/* Room this thing is in */
-	long t_flags;				/* State word */
+	unsigned int t_flags;				/* State word */
 	int t_indx;					/* Index into monster structure */
 	int t_nomove;				/* # turns you cant move */
 	int t_nocmd;				/* # turns you cant do anything */
@@ -770,7 +770,7 @@ struct monster {
 	char m_show;			/* char that monster shows */
 	short m_carry;			/* Probability of having an item */
 	struct monlev m_lev;	/* level stuff */
-	long m_flags;			/* Things about the monster */
+	unsigned int m_flags;			/* Things about the monster */
 	struct stats m_stats;	/* Initial stats */
 };
 
@@ -788,7 +788,7 @@ struct object {
 	int o_hplus;			/* Plusses to hit */
 	int o_dplus;			/* Plusses to damage */
 	int o_ac;				/* Armor class or charges */
-	int o_flags;			/* Information about objects */
+	unsigned int o_flags;			/* Information about objects */
 	int o_group;			/* Group number for this object */
 	int o_weight;			/* weight of this object */
 	int o_vol;				/* volume of this object */
@@ -947,7 +947,7 @@ extern struct magic_item ws_magic[MAXSTICKS + 1];
 
 extern struct magic_info thnginfo[NUMTHINGS];
 
-extern long e_levels[];
+extern int e_levels[];
 
 extern WINDOW *cw;
 extern WINDOW *hw;
@@ -1026,12 +1026,12 @@ void displevl(void);
 void dispmons(void);
 char winat(int y, int x);
 int cordok(int y, int x);
-int pl_on(long what);
-int pl_off(long what);
-int o_on(struct object *what, long bit);
-int o_off(struct object *what, long bit);
-void setoflg(struct object *what, long bit);
-void resoflg(struct object *what, long bit);
+int pl_on(unsigned int what);
+int pl_off(unsigned int what);
+int o_on(struct object *what, unsigned int bit);
+int o_off(struct object *what, unsigned int bit);
+void setoflg(struct object *what, unsigned int bit);
+void resoflg(struct object *what, unsigned int bit);
 /* encumb.c */
 void updpack(void);
 int packweight(void);
@@ -1211,7 +1211,7 @@ void draw_room(struct room *rp);
 void horiz(int cnt);
 void vert(int cnt);
 struct coord *rnd_pos(struct room *rp);
-int rf_on(struct room *rm, long bit);
+int rf_on(struct room *rm, unsigned int bit);
 /* save.c */
 void ignore(void);
 int save_game(void);

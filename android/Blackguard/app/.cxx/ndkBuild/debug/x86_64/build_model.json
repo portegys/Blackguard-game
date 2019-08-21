@@ -1,0 +1,60 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "C:\\Blackguard\\android\\Blackguard",
+      "sdkFolder": "C:\\AndroidStudio",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "C:\\Blackguard\\android\\Blackguard\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "C:\\Blackguard\\android\\Blackguard\\app",
+      "makeFile": "C:\\Blackguard\\android\\Blackguard\\app\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "C:\\Blackguard\\android\\Blackguard\\.cxx",
+      "cxxFolder": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx",
+      "ndkFolder": "C:\\AndroidStudio\\ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "C:\\Blackguard\\android\\Blackguard\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+    "objFolder": "C:\\Blackguard\\android\\Blackguard\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local",
+    "jsonFolder": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug",
+    "gradleBuildOutputFolder": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug\\x86_64",
+  "jsonFile": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug\\x86_64\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\cxx\\debug\\x86_64",
+  "objFolder": "C:\\Blackguard\\android\\Blackguard\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64",
+  "buildCommandFile": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug\\x86_64\\build_command.txt",
+  "buildOutputFile": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug\\x86_64\\build_output.txt",
+  "modelOutputFile": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug\\x86_64\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug\\x86_64\\json_generation_record.json",
+  "compileCommandsJsonFile": "C:\\Blackguard\\android\\Blackguard\\app\\.cxx\\ndkBuild\\debug\\x86_64\\compile_commands.json"
+}

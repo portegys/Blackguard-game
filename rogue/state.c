@@ -1154,7 +1154,7 @@ rs_write_rooms(FILE *savef, struct room r[], int count)
         rs_write_room_reference(savef,r[n].r_ptr[2]);
         rs_write_room_reference(savef,r[n].r_ptr[3]);
         rs_write_int(savef, r[n].r_goldval);
-        rs_write_int(savef, r[n].r_flags);
+        rs_write_uint(savef, r[n].r_flags);
         rs_write_int(savef, r[n].r_nexits);
     }
     
@@ -1190,7 +1190,7 @@ rs_read_rooms(int inf, struct room *r, int count)
                 rs_read_room_reference(inf,&r[n].r_ptr[2]);
                 rs_read_room_reference(inf,&r[n].r_ptr[3]);
                 rs_read_int(inf,&r[n].r_goldval);
-                rs_read_int(inf,&r[n].r_flags);
+                rs_read_uint(inf,&r[n].r_flags);
                 rs_read_int(inf,&r[n].r_nexits);
             }
     }
@@ -1302,7 +1302,7 @@ rs_write_stats(FILE *savef, struct stats *s)
     rs_write_int(savef, RSID_STATS);
     rs_write_real(savef, s->s_re);
     rs_write_real(savef, s->s_ef);
-    rs_write_long(savef, s->s_exp);
+    rs_write_int(savef, s->s_exp);
     rs_write_int(savef, s->s_lvl);
     rs_write_int(savef, s->s_arm);
     rs_write_int(savef, s->s_hpt);
@@ -1323,7 +1323,7 @@ rs_read_stats(int inf, struct stats *s)
     rs_read_real(inf, &s->s_re);
     rs_read_real(inf, &s->s_ef);
 
-    rs_read_long(inf,&s->s_exp);
+    rs_read_int(inf,&s->s_exp);
     rs_read_int(inf,&s->s_lvl);
     rs_read_int(inf,&s->s_arm);
     rs_read_int(inf,&s->s_hpt);
@@ -1416,7 +1416,7 @@ rs_write_object(FILE *savef, struct object *o)
     rs_write_int(savef, o->o_hplus);
     rs_write_int(savef, o->o_dplus);
     rs_write_int(savef, o->o_ac);
-    rs_write_int(savef, o->o_flags);
+    rs_write_uint(savef, o->o_flags);
     rs_write_int(savef, o->o_group);
     rs_write_int(savef, o->o_weight);
     rs_write_int(savef, o->o_vol);
@@ -1471,7 +1471,7 @@ rs_read_object(int inf, struct object *o)
             rs_read_int(inf, &o->o_hplus);
             rs_read_int(inf, &o->o_dplus);
             rs_read_int(inf, &o->o_ac);
-            rs_read_int(inf, &o->o_flags);
+            rs_read_uint(inf, &o->o_flags);
             rs_read_int(inf, &o->o_group);
             rs_read_int(inf, &o->o_weight);
             rs_read_int(inf, &o->o_vol);
@@ -1548,7 +1548,7 @@ rs_write_traps(FILE *savef, struct trap *trap,int count)
     {
         rs_write_coord(savef, trap[n].tr_pos);
         rs_write_coord(savef, trap[n].tr_goto);
-        rs_write_int(savef, trap[n].tr_flags);
+        rs_write_uint(savef, trap[n].tr_flags);
         rs_write_char(savef, trap[n].tr_type);
     }
 }
@@ -1582,7 +1582,7 @@ rs_read_traps(int inf, struct trap *trap, int count)
                 {   
                     rs_read_coord(inf,&trap[n].tr_pos);
                     rs_read_coord(inf,&trap[n].tr_goto);
-                    rs_read_int(inf,&trap[n].tr_flags);
+                    rs_read_uint(inf,&trap[n].tr_flags);
                     rs_read_char(inf,&trap[n].tr_type);
                 }
             }
@@ -1784,7 +1784,7 @@ rs_write_thing(FILE *savef, struct thing *t)
     
     rs_write_object_list(savef, t->t_pack);
     rs_write_room_reference(savef, t->t_room);
-    rs_write_long(savef, t->t_flags);
+    rs_write_uint(savef, t->t_flags);
     rs_write_int(savef, t->t_indx);
     rs_write_int(savef, t->t_nomove);
     rs_write_int(savef, t->t_nocmd);
@@ -1868,7 +1868,7 @@ rs_read_thing(int inf, struct thing *t)
 
             rs_read_object_list(inf, &t->t_pack);
             rs_read_room_reference(inf, &t->t_room);
-            rs_read_long(inf, &t->t_flags);
+            rs_read_uint(inf, &t->t_flags);
             rs_read_int(inf, &t->t_indx);
             rs_read_int(inf, &t->t_nomove);
             rs_read_int(inf, &t->t_nocmd);
