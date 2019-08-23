@@ -498,7 +498,7 @@ int how;
 #ifdef METRO
        _unlink(file_name);
 #endif
-#if ( ANDROID || METRO || NEW_GAME )
+#if ( METRO || NEW_GAME )
        /* Start new game. */
        longjmp(newgame, 4);
 #endif
