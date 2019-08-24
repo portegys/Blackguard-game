@@ -497,6 +497,17 @@ addstr("  ;   ; ;   ; ;  ;;   ;   ; ;   ; ;   ; ;         ;   ;  ;     \n");
 addstr("   ;;;   ;;;   ;; ;   ;   ;  ;;;;  ;;;;  ;;;     ;;;   ;;   ;  \n");
 addstr("                                                               \n");
 #else
+#ifdef ANDROID
+addstr("                                                               \n");
+addstr("  #   #               #   #           #          ###  #     #  \n");
+addstr("  #   #               ## ##           #           #   #     #  \n");
+addstr("  #   #  ###  #   #   # # #  ###   ####  ###      #  ###    #  \n");
+addstr("   #### #   # #   #   #   #     # #   # #   #     #   #     #  \n");
+addstr("      # #   # #   #   #   #  #### #   # #####     #   #     #  \n");
+addstr("  #   # #   # #  ##   #   # #   # #   # #         #   #  #     \n");
+addstr("   ###   ###   ## #   #   #  ####  ####  ###     ###   ##   #  \n");
+addstr("                                                               \n");
+#else
 addstr("                                                               \n");
 addstr("  @   @               @   @           @          @@@  @     @  \n");
 addstr("  @   @               @@ @@           @           @   @     @  \n");
@@ -506,6 +517,7 @@ addstr("      @ @   @ @   @   @   @  @@@@ @   @ @@@@@     @   @     @  \n");
 addstr("  @   @ @   @ @  @@   @   @ @   @ @   @ @         @   @  @     \n");
 addstr("   @@@   @@@   @@ @   @   @  @@@@  @@@@  @@@     @@@   @@   @  \n");
 addstr("                                                               \n");
+#endif
 #endif
 addstr("     Congratulations, you have made it to the light of day!    \n");
 addstr("\nYou have joined the elite ranks of those who have escaped the\n");

@@ -59,6 +59,10 @@ do_post()
 	waddstr(cw,"$: Prices object that you stand upon.\n\r");
 	waddstr(cw,"#: Buys the object that you stand upon.\n\r");
 	waddstr(cw,"%: Trades in something in your pack for gold.\n\r");
+#if BLACKGUARD
+	waddstr(cw,"\n\r");
+	waddstr(cw,"Use h=up/j=left/k=right/l=down keys to move.\n\r");
+#endif
 	trans_line();
 }
 
