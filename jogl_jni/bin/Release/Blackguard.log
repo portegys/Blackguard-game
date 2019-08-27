@@ -1,5 +1,0 @@
-﻿  javac: file not found: blackguard\*.java
-  Usage: javac <options> <source files>
-  use -help for a list of possible options
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: The command "javac -d ../bin -cp "../lib/jogl.all.jar;../lib/nativewindow.all.jar;../lib/gluegen-rt.jar;../lib/newt.all.jar" blackguard/*.java && javah -jni -classpath ../bin blackguard.Blackguard && javah -jni -classpath ../bin blackguard.Scene
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: :VCEnd" exited with code 2.

@@ -1,1 +1,0 @@
-Blackguard is a Rogue-like game with a Doom-like first-person shooter interface.
