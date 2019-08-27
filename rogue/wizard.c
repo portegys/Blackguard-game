@@ -371,6 +371,7 @@ passwd()
             passok = (strcmp(PASSWD, xcrypt(buf, "mT")) == 0);
 	}
 #else
+	sp = buf;
 	i = 0;
 	while ((c = getchar()) != '\n' && c != '\r' && c != ESCAPE)
 	{
