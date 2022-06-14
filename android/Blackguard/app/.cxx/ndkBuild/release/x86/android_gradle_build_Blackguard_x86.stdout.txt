@@ -1,5 +1,0 @@
-[x86] Compile        : Blackguard <= new_leve.c
-[x86] Compile        : Blackguard <= pack.c
-[x86] Compile        : Blackguard <= rip.c
-[x86] Compile        : Blackguard <= trader.c
-[x86] SharedLibrary  : libBlackguard.so

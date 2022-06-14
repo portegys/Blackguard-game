@@ -121,6 +121,9 @@
 #define FIGHT	1		/* fight the hero */
 #define GONER	2		/* chaser fell into a trap */
 
+/* Conjurer */
+#define CONJURER 2
+
 #ifdef BLACKGUARD
 
 /* Terminal function wrappers: */
@@ -1358,7 +1361,7 @@ void wield(void);
 int fallpos(struct coord *pos, struct coord *newpos, BOOL passages);
 /* wizard.c */
 void whatis(struct linked_list *what);
-void create_obj(BOOL fscr);
+void create_obj(BOOL fscr, BOOL fromscrolls);
 int getbless(void);
 int makemons(int what);
 int teleport(struct coord spot, struct thing *th);

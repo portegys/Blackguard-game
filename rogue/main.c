@@ -64,7 +64,10 @@ char **envp;
 	struct passwd *pw;
 	struct passwd *getpwuid();
 	char alldone, wpt;
-	char *xcrypt(), *strrchr();
+	char *xcrypt();
+#ifndef ANDROID
+    char *strrchr();
+#endif
 	char *getpass(char *);
 	int lowtime;
 	time_t now;
@@ -265,7 +268,7 @@ char **envp;
 #ifdef METRO
 	dnum = lowtime;
 #else
-	dnum = (wizard && getenv("SEED") != NULL ?
+	dnum = (wizard == TRUE && getenv("SEED") != NULL ?
 		atoi(getenv("SEED")) : lowtime + getpid());
 #endif
 
@@ -308,7 +311,7 @@ char **envp;
 
 #ifdef BLACKGUARD
 	notifyOpenDungeon();
-	if(wizard)
+	if(wizard == TRUE)
 		sprintf(buf, "Hello %s, welcome to dungeon #%d", whoami, dnum);
 	else
 		sprintf(buf, "Hello %s, One moment while I open the door to the dungeon...", whoami);
@@ -323,7 +326,7 @@ char **envp;
 #endif
 	displaymsg = NULL;
 #else
-	if(wizard)
+	if(wizard == TRUE)
 		printf("Hello %s, welcome to dungeon #%d\n", whoami, dnum);
 	else
 		printf("Hello %s, One moment while I open the door to the dungeon...\n", whoami);

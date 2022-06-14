@@ -191,7 +191,7 @@ int amount, aflag;
 	refresh();
 	wgetnstr(stdscr,prbuf,80);
 #endif
-	if (author() || wizard)
+	if (author() || wizard == TRUE)
 		if (strcmp(prbuf, "names") == 0)
 			prflags = 1;
         for(i = 0; i < 10; i++)

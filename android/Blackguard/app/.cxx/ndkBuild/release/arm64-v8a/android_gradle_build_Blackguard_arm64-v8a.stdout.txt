@@ -1,5 +1,0 @@
-[arm64-v8a] Compile        : Blackguard <= new_leve.c
-[arm64-v8a] Compile        : Blackguard <= pack.c
-[arm64-v8a] Compile        : Blackguard <= rip.c
-[arm64-v8a] Compile        : Blackguard <= trader.c
-[arm64-v8a] SharedLibrary  : libBlackguard.so

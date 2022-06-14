@@ -1,6 +1,6 @@
 Blackguard game.
 
-Blackguard is a Rogue-like game with a Doom-like first-person shooter interface.
+Blackguard is a Rogue-like game with a first-person interface.
 
 Rogue is a game that holds close to Dungeons & Dragons. See the manual in android/Blackguard/app/src/main/assets/doc/blackguard.txt
 

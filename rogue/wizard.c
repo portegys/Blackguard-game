@@ -79,8 +79,9 @@ struct linked_list *what;
  *	Create any object for wizard or scroll (almost)
  */
 void
-create_obj(fscr)
+create_obj(fscr, fromscrolls)
 BOOL fscr;
+BOOL fromscrolls;
 {
 	reg struct linked_list *item;
 	reg struct object *obj;
@@ -105,10 +106,20 @@ BOOL fscr;
 		wclear(hw);
 		wprintw(hw,"Item\tKey\n\n");
 		for (otype = 0; otype < NUMTHINGS; otype++) {
-			if (otype != TYP_AMULET || wizard) {
+            if (fromscrolls) {
+                if (otype != TYP_AMULET) {
+                    mf = &thnginfo[otype];
+                    wprintw(hw, "%s\t %c\n", things[otype].mi_name, mf->mf_show);
+                }
+            } else if (wizard == TRUE) {
 				mf = &thnginfo[otype];
-				wprintw(hw,"%s\t %c\n",things[otype].mi_name,mf->mf_show);
-			}
+				wprintw(hw, "%s\t %c\n", things[otype].mi_name, mf->mf_show);
+            } else if (wizard == CONJURER) {
+                if (otype == TYP_FOOD || otype == TYP_POTION || otype == TYP_SCROLL) {
+                    mf = &thnginfo[otype];
+                    wprintw(hw, "%s\t %c\n", things[otype].mi_name, mf->mf_show);
+                }
+            }
 		}
 		if (wizard)
 			waddstr(hw,"monster\t (A-z)");
@@ -122,10 +133,24 @@ BOOL fscr;
 				return;
 			}
 			switch (ch) {
-				case RING:		case STICK:	case POTION:
-				case SCROLL:	case ARMOR:	case WEAPON:
-				case FOOD:		case AMULET:
+				case POTION:
+				case SCROLL:
+				case FOOD:
+                case 62:   /* food? */
 					nogood = FALSE;
+					break;
+				case RING:
+				case STICK:
+				case ARMOR:
+				case WEAPON:
+					if (fromscrolls || wizard == TRUE) {
+						nogood = FALSE;
+					}
+					break;
+				case AMULET:
+					if (wizard == TRUE) {
+						nogood = FALSE;
+					}
 					break;
 				default:
 					if (isalpha(ch))
@@ -133,14 +158,25 @@ BOOL fscr;
 			}
 		} while (nogood);
 	}
+    if (ch == FOOD || ch == 62) {
+        if (inhw)
+            restscr(cw);
+        msg("Bon appetit!");
+        item = new_thing(FALSE, FOOD, 0);
+        wh = add_pack(item, FALSE);
+        if (wh == FALSE)			/* won't fit in pack */
+            discard(item);
+        return;
+    }
 	if (isalpha(ch)) {
 		if (inhw)
 			restscr(cw);
+        msg("Your monster, as requested");
 		makemons(ch);		/* make monster & be done with it */
 		return;
 	}
 	otype = getindex(ch);
-	if (otype == -1 || (otype == AMULET && !wizard)) {
+	if (otype == -1) {
 		if (inhw)
 			restscr(cw);
 		mpos = 0;
@@ -210,6 +246,16 @@ BOOL fscr;
 			restscr(cw);
 		msg("There is no such %s", oname);
 		return;
+	}
+	if (fromscrolls == FALSE && wizard == CONJURER) {  /* conjurer can't create scroll of acquirement */
+		if (newitem == SCROLL && newtype == S_MAKEIT) {
+			mpos = 0;
+			after = FALSE;
+			if (inhw)
+				restscr(cw);
+			msg("Sorry, you can't conjure a scroll of acquirement");
+			return;
+		}
 	}
 	mpos = 0;
 	item = new_thing(FALSE, newitem, newtype);

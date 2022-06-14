@@ -363,6 +363,8 @@
 
        c       Call an object.  You can call an object anything you like.
 
+       C       Become conjurer of magic items (~ creates item).
+
        v       Prints the program version number (version).
 
        S       Show scores (show).

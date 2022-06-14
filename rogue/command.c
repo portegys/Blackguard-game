@@ -48,7 +48,7 @@ command()
 		/*
 		 * Read command or continue run
 		 */
-		if (wizard)
+		if (wizard == TRUE)
 			waswizard = TRUE;
 		if (player.t_nocmd <= 0) {
 			player.t_nocmd = 0;
@@ -221,7 +221,7 @@ command()
 				when '.' : ;				/* Rest command */
 				when ' ' : after = FALSE;	/* do nothing */
 				when '=' :
-					if (author() || wizard) {
+					if (author() || wizard == TRUE) {
 						activity();
 						after = FALSE;
 					}
@@ -243,14 +243,34 @@ command()
 				     displaymsg = "View manual";
 #endif
 #if ANDROID || METRO
+				when 'C' :
+					after = FALSE;
+					if (wizard) {
+						if (wizard == TRUE) {
+							msg("Not wizard any more");
+						} else {
+							msg("Not conjurer any more");
+						}
+						wizard = FALSE;
+					}
+					else {
+						wizard = CONJURER;
+						msg("Hail the mighty conjurer!!!!!");
+					}
+#endif
+#if ANDROID || METRO
 				when 'X' :
 #else
 				when CTRL('P') :
 #endif
 					after = FALSE;
 					if (wizard) {
+						if (wizard == TRUE) {
+							msg("Not wizard any more");
+						} else {
+							msg("Not conjurer any more");
+						}
 						wizard = FALSE;
-						msg("Not wizard any more");
 					}
 					else {
 #if ANDROID || METRO
@@ -282,119 +302,130 @@ command()
 						sell_it();
 					after = FALSE;
 				otherwise :
-					after = FALSE;
-					if (wizard) switch (ch) {
+                    after = FALSE;
+                    if (wizard == TRUE) switch (ch) {
 #if ANDROID || METRO
-					when '~'     :	create_obj(FALSE);
-					when '!' :	inventory(lvl_obj, 1);
-					when '^' :	whatis(NULL);
-					when '&' :	level++; new_level(NORMLEV);
-					when '*' :	if (level > 1) level--; new_level(NORMLEV);
-					when '(' :	displevl();
-					when ')' :	dispmons();
-					when '{' :	teleport(rndspot,&player);
-					when '}' :	msg("food left: %d", food_left);
-					when '[' :	add_pass();
-					when ']' : {
+						when '~'     :	create_obj(FALSE, FALSE);
+						when '!' :	inventory(lvl_obj, 1);
+						when '^' :	whatis(NULL);
+						when '&' :	level++; new_level(NORMLEV);
+						when '*' :	if (level > 1) level--; new_level(NORMLEV);
+						when '(' :	displevl();
+						when ')' :	dispmons();
+						when '{' :	teleport(rndspot,&player);
+						when '}' :	msg("food left: %d", food_left);
+						when '[' :	add_pass();
+						when ']' : {
 #else
-					case CTRL('A') : ;
-					when 'C'     :	create_obj(FALSE);
-					when CTRL('I') :	inventory(lvl_obj, 1);
-					when CTRL('W') :	whatis(NULL);
-					when CTRL('D') :	level++; new_level(NORMLEV);
-					when CTRL('U') :	if (level > 1) level--; new_level(NORMLEV);
-					when CTRL('F') :	displevl();
-					when CTRL('X') :	dispmons();
-					when CTRL('T') :	teleport(rndspot,&player);
-					when CTRL('E') :	msg("food left: %d", food_left);
-					when CTRL('O') :	add_pass();
-					when 'M' : {
+						case CTRL('A') : ;
+						when 'C'     :	create_obj(FALSE, FALSE);
+						when CTRL('I') :	inventory(lvl_obj, 1);
+						when CTRL('W') :	whatis(NULL);
+						when CTRL('D') :	level++; new_level(NORMLEV);
+						when CTRL('U') :	if (level > 1) level--; new_level(NORMLEV);
+						when CTRL('F') :	displevl();
+						when CTRL('X') :	dispmons();
+						when CTRL('T') :	teleport(rndspot,&player);
+						when CTRL('E') :	msg("food left: %d", food_left);
+						when CTRL('O') :	add_pass();
+						when 'M' : {
 #endif
-						int tlev, whichlev;
-						prbuf[0] = '\0';
-						msg("Which level? ");
-						if (get_str(prbuf,cw) == NORM) {
-							whichlev = NORMLEV;
-							tlev = atoi(prbuf);
-							if (tlev < 1)
-								level = 1;
-							if (tlev >= 200) {
-								tlev -= 199;
-								whichlev = MAZELEV;
-							}
-							else if (tlev >= 100) {
-								tlev -= 99;
-								whichlev = POSTLEV;
-							}
-							level = tlev;
-							new_level(whichlev);
-						}
-					}
+                            int tlev, whichlev;
+                            prbuf[0] = '\0';
+                            msg("Which level? ");
+                            if (get_str(prbuf, cw) == NORM) {
+                                whichlev = NORMLEV;
+                                tlev = atoi(prbuf);
+                                if (tlev < 1)
+                                    level = 1;
+                                if (tlev >= 200) {
+                                    tlev -= 199;
+                                    whichlev = MAZELEV;
+                                } else if (tlev >= 100) {
+                                    tlev -= 99;
+                                    whichlev = POSTLEV;
+                                }
+                                level = tlev;
+                                new_level(whichlev);
+                            }
+                        }
 #if ANDROID || METRO
-					when '"' : {
+                        when '"' : {
 #else
-					when CTRL('N') : {
+                        when CTRL('N') : {
 #endif
-						struct linked_list *item;
+								struct linked_list *item;
 
-						item = get_item("charge", STICK);
-						if (item != NULL) {
-							(OBJPTR(item))->o_charges = 10000;
-							msg("");
-						}
-					}
+								item = get_item("charge", STICK);
+								if (item != NULL) {
+									(OBJPTR(item))->o_charges = 10000;
+									msg("");
+								}
+                        }
 #if ANDROID || METRO
-					when '+' : {
+                        when '+' : {
 #else
-					when CTRL('H') : {
+                        when CTRL('H') : {
 #endif
-						int i;
-						struct linked_list *item;
-						struct object *obj;
+								int i;
+								struct linked_list *item;
+								struct object *obj;
 
-						him->s_exp = e_levels[him->s_lvl + 7] + 1;
-						check_level();
-						/*
-						 * Give the rogue a very good sword
-						 */
-						item = new_thing(FALSE, WEAPON, TWOSWORD);
-						obj = OBJPTR(item);
-						obj->o_hplus = 3;
-						obj->o_dplus = 3;
-						obj->o_flags = ISKNOW;
-						i = add_pack(item, TRUE);
-						if (i)
-							cur_weapon = obj;
-						else
-							discard(item);
-						/*
-						 * And his suit of armor
-						 */
-						item = new_thing(FALSE, ARMOR, PLATEARMOR);
-						obj = OBJPTR(item);
-						obj->o_ac = -8;
-						obj->o_flags = ISKNOW;
-						i = add_pack(item, TRUE);
-						if (i)
-							cur_armor = obj;
-						else
-							discard(item);
-						nochange = FALSE;
+								him->s_exp = e_levels[him->s_lvl + 7] + 1;
+								check_level();
+								/*
+                                 * Give the rogue a very good sword
+                                 */
+								item = new_thing(FALSE, WEAPON, TWOSWORD);
+								obj = OBJPTR(item);
+								obj->o_hplus = 3;
+								obj->o_dplus = 3;
+								obj->o_flags = ISKNOW;
+								i = add_pack(item, TRUE);
+								if (i)
+									cur_weapon = obj;
+								else
+									discard(item);
+								/*
+                                 * And his suit of armor
+                                 */
+								item = new_thing(FALSE, ARMOR, PLATEARMOR);
+								obj = OBJPTR(item);
+								obj->o_ac = -8;
+								obj->o_flags = ISKNOW;
+								i = add_pack(item, TRUE);
+								if (i)
+									cur_armor = obj;
+								else
+									discard(item);
+								nochange = FALSE;
+							}
+                        otherwise:
+#ifdef METRO
+								if (ch != '\n' && ch != '\r')
+#endif
+								msg(illegal, unctrl(ch));
+								count = 0;
+                    }
+					else {
+#if ANDROID || METRO
+						// Conjurer?
+						if (wizard == CONJURER) {
+							if (ch == '~') {
+								create_obj(FALSE, FALSE);
+							} else {
+#ifdef METRO
+								if (ch != '\n' && ch != '\r')
+#endif
+								msg(illegal, unctrl(ch));
+								count = 0;
+							}
+						}
+#else
+                        msg(illegal, unctrl(ch));
+                        count = 0;
+#endif
 					}
-					otherwise:
-#ifdef METRO
-						if (ch != '\n' && ch != '\r')
-#endif
-						msg(illegal, unctrl(ch));
-						count = 0;
-				}
-				else {
-#ifdef METRO
-					if (ch != '\n' && ch != '\r')
-#endif
-					msg(illegal, unctrl(ch));
-					count = 0;
-				}
 			}
 			/*
 			 * turn off flags if no longer needed

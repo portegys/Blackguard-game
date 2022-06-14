@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Blackguard.iml" filepath="$PROJECT_DIR$/Blackguard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Blackguard.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Blackguard.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Blackguard.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Blackguard.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Blackguard.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Blackguard.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Blackguard.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Blackguard.app.unitTest.iml" />
     </modules>
   </component>
 </project>

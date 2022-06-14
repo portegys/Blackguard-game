@@ -29,3 +29,4 @@ Platform::String^ BindableBase::GetStringRepresentation()
 {
 	return this->ToString(); 
 }
+

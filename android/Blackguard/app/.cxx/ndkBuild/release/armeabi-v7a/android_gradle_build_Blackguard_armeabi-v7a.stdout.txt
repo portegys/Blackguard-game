@@ -1,5 +1,0 @@
-[armeabi-v7a] Compile thumb  : Blackguard <= new_leve.c
-[armeabi-v7a] Compile thumb  : Blackguard <= pack.c
-[armeabi-v7a] Compile thumb  : Blackguard <= rip.c
-[armeabi-v7a] Compile thumb  : Blackguard <= trader.c
-[armeabi-v7a] SharedLibrary  : libBlackguard.so

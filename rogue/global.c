@@ -219,6 +219,7 @@ struct h_list helpstr[] = {
 	'd',	"	drop object",
 	'c',	"	call object",
 #if ANDROID || METRO
+	'C',	"	become conjurer of magic items (~ creates item)",
 	'O',	"	change name",
 #else
 	'O',	"	set name and options",

@@ -450,7 +450,7 @@ struct magic_item *mag;
 		if (i < mag->mi_prob)
 			break;
 		if (mag->mi_name == NULL) {
-			if (author() || wizard) {
+			if (author() || wizard == TRUE) {
 				for (mag = start; mag->mi_name != NULL; mag++)
 					msg("%s: %d%%", mag->mi_name, mag->mi_prob);
 			}

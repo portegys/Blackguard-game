@@ -10,8 +10,8 @@
 
 #ifdef BLACKGUARD
 #ifdef ANDROID
-char version[] = "@(#) vers.c	1.5	 8/10/2012	dialectek.com/blackguard";
-char *release = "1.5 8/10/2012 dialectek.com/blackguard";
+char version[] = "@(#) vers.c	1.6	 6/14/2022	dialectek.com/blackguard";
+char *release = "1.6 6/14/2022 dialectek.com/blackguard";
 #elif METRO
 char version[] = "@(#) vers.c	1.0	 9/1/2012	dialectek.com/blackguard";
 char *release = "1.0 9/1/2012 dialectek.com/blackguard";

@@ -391,7 +391,7 @@ read_scroll()
 		if (!curse) {
 			msg("You have been endowed with the power of creation.");
 			s_know[S_MAKEIT] = TRUE;
-			create_obj(TRUE);
+			create_obj(TRUE, TRUE);
 		}
 	when S_BAN: {
 		int howdeep;
