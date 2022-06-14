@@ -13,7 +13,9 @@ Directories:
 
 - android: Android Studio.
 - basic: OpenGL graphics with C++/C engine thread, FMOD audio (x86).
+- ios: Marmalade.
+- jogl_jni: Java (JOGL) graphics with JNI/C++/C engine thread.
 - metro: Windows Store app.
 - rogue: rogue game codebase.
 
-Build tools: Android Studio, make, Visual Studio 15.
+Build tools: Android Studio, make, Eclipse, Visual Studio 15, and Marmalade.
