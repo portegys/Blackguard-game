@@ -1,7 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+
+    defaultConfig {
+        versionCode = 16
+        versionName = "1.16"
+    }
+
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "com.dialectek.blackguard"
