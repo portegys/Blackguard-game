@@ -1,0 +1,15 @@
+#Deployment options edited by the Hub
+#It is recommended to use the Configurations tab within the Hub to make edits
+#Manual edits to this file will cause the project to need to be reloaded
+
+deployments
+{
+    #platforms iphone osx win32
+    icon = "icons/icon.png"
+    splashscreen = "data/splashscreen.jpg"
+    splashscreen-use-all = "1"
+    iphone-icon-dir = "icons"
+    iphone-splash = "data/splashscreen.jpg"
+    win32-icon = "icons/icon.png"
+
+}
