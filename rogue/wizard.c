@@ -92,15 +92,6 @@ BOOL fromscrolls;
 
 	if (fscr)
 		msg(" ");
-	else if (wizard) {
-		msg("Create what?%s: ", starlist);
-		ch = readchar();
-		mpos = 0;
-		if (ch == ESCAPE)
-			return;
-		else if (ch != '*')
-			nogood = FALSE;
-	}
 	if (nogood) {
 		inhw = TRUE;
 		wclear(hw);
