@@ -255,7 +255,10 @@ command()
 					}
 					else {
 						wizard = CONJURER;
-						msg("Hail the mighty conjurer!!!!!");
+                        if (waswizard == FALSE) {  /* trick to allow one conjuration per level */
+                            waswizard = level + 1;
+                        }
+						msg("Hail the mighty conjurer!!!!! (one conjuration per level)");
 					}
 #endif
 #if ANDROID || METRO

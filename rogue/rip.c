@@ -218,7 +218,7 @@ int amount, aflag;
 	/*
 	 * Insert it in list if need be
 	 */
-	if (!waswizard) {
+	if (waswizard != TRUE) {
 		for (scp = top_ten; scp <= &top_ten[9]; scp++)
 			if (amount > scp->sc_score)
 				break;

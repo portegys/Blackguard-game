@@ -90,6 +90,20 @@ BOOL fromscrolls;
 	struct magic_info *mf;
 	BOOL nogood = TRUE, inhw = FALSE;
 
+    /* Limit of one conjuration per level unless have amulet */
+    if (fromscrolls == FALSE) {
+        if (wizard == CONJURER) {
+            if (amulet == FALSE) {
+                if (waswizard > 1) {
+                    if (level < waswizard - 1) {
+                        msg("Only one conjuration per level!");
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
 	if (fscr)
 		msg(" ");
 	if (nogood) {
@@ -155,8 +169,17 @@ BOOL fromscrolls;
         msg("Bon appetit!");
         item = new_thing(FALSE, FOOD, 0);
         wh = add_pack(item, FALSE);
-        if (wh == FALSE)			/* won't fit in pack */
+        if (wh == FALSE) {            /* won't fit in pack */
             discard(item);
+        } else {
+            if (fromscrolls == FALSE) {
+                if (wizard == CONJURER) {
+                    if (waswizard > 1) {
+                        waswizard = level + 2;
+                    }
+                }
+            }
+        }
         return;
     }
 	if (isalpha(ch)) {
@@ -164,7 +187,14 @@ BOOL fromscrolls;
 			restscr(cw);
         msg("Your monster, as requested");
 		makemons(ch);		/* make monster & be done with it */
-		return;
+        if (fromscrolls == FALSE) {
+            if (wizard == CONJURER) {
+                if (waswizard > 1) {
+                    waswizard = level + 2;
+                }
+            }
+        }
+        return;
 	}
 	otype = getindex(ch);
 	if (otype == -1) {
@@ -210,8 +240,19 @@ BOOL fromscrolls;
 		wclear(hw);
 		for (ii = 0 ; ii < msz ; ii++) {
 			mvwaddch(hw,ii % 13,ii > 12 ? COLS/2 : 0, ii + 'a');
-			waddstr(hw,") ");
+			waddstr(hw, ") ");
 			waddstr(hw,wmi->mi_name);
+			if (wizard == CONJURER) {
+				if (newitem == POTION) {
+					if (ii == P_ETH || ii == P_INVINC) {
+						waddstr(hw, " (x)");
+					}
+				} else if (newitem == SCROLL) {
+					if (ii == S_MAKEIT || ii == S_DLEVEL || ii == S_BAN) {
+						waddstr(hw, " (x)");
+					}
+				}
+			}
 			wmi++;
 		}
 		sprintf(prbuf,"Which %s? ", oname);
@@ -238,14 +279,26 @@ BOOL fromscrolls;
 		msg("There is no such %s", oname);
 		return;
 	}
-	if (fromscrolls == FALSE && wizard == CONJURER) {  /* conjurer can't create scroll of acquirement */
-		if (newitem == SCROLL && newtype == S_MAKEIT) {
-			mpos = 0;
-			after = FALSE;
-			if (inhw)
-				restscr(cw);
-			msg("Sorry, you can't conjure a scroll of acquirement");
-			return;
+	if (fromscrolls == FALSE && wizard == CONJURER) {  /* conjurer can't some items */
+		if (newitem == POTION) {
+			if (newtype == P_ETH || newtype == P_INVINC) {
+				mpos = 0;
+				after = FALSE;
+				if (inhw)
+					restscr(cw);
+				msg("Sorry, you can't conjure a potion of %s!", p_magic[newtype].mi_name);
+				return;
+			}
+		}
+		if (newitem == SCROLL) {
+			if (newtype == S_MAKEIT || newtype == S_DLEVEL || newtype == S_BAN) {
+				mpos = 0;
+				after = FALSE;
+				if (inhw)
+					restscr(cw);
+				msg("Sorry, you can't conjure a scroll of %s!", s_magic[newtype].mi_name);
+				return;
+			}
 		}
 	}
 	mpos = 0;
@@ -274,8 +327,17 @@ BOOL fromscrolls;
 	if (fscr)
 		whatis(item);			/* identify for aquirement scroll */
 	wh = add_pack(item, FALSE);
-	if (wh == FALSE)			/* won't fit in pack */
-		discard(item);
+	if (wh == FALSE) {            /* won't fit in pack */
+        discard(item);
+    } else {
+        if (fromscrolls == FALSE) {
+            if (wizard == CONJURER) {
+                if (waswizard > 1) {
+                    waswizard = level + 2;
+                }
+            }
+        }
+    }
 }
 
 

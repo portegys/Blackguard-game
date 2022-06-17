@@ -8,7 +8,6 @@ In addition to the 3D interface, one of the goals was to have sprites for the mo
 Currently they are represented by characters, as in the original game. 
 Unfortunately the artwork necessary for this was not done, making it a nice enhancement opportunity.
 
-
 Directories:
 
 - android: Android Studio.
@@ -18,4 +17,8 @@ Directories:
 - metro: Windows Store app.
 - rogue: rogue game codebase.
 
-Build tools: Android Studio, make, Eclipse, Visual Studio 15, and Marmalade.
+Build tools: Android Studio, make, Eclipse, Visual Studio, and Marmalade.
+
+Updates:
+6/14/2022 1.6: Conjurer ('C' command) for Android. Conjurer can create ('~') a selection of potions, scrolls, monsters and food.
+

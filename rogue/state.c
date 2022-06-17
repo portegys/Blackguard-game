@@ -204,7 +204,8 @@ rs_write_char(FILE *savef, char c)
 int
 rs_write_boolean(FILE *savef, bool c)
 {
-    unsigned char buf = (c == 0) ? 0 : 1;
+    //unsigned char buf = (c == 0) ? 0 : 1;
+    unsigned char buf = c;
     
     rs_write(savef, &buf, 1);
 
@@ -2190,7 +2191,7 @@ rs_save_file(FILE *savef)
     rs_write_boolean(savef, after);
     rs_write_boolean(savef, door_stop);
     rs_write_boolean(savef, firstmove);
-    rs_write_boolean(savef, waswizard);
+    rs_write_char(savef, waswizard);
     rs_write_boolean(savef, amulet);
     rs_write_boolean(savef, in_shell);
     rs_write_boolean(savef, nochange);
@@ -2299,7 +2300,7 @@ rs_restore_file(int inf)
     rs_read_boolean(inf, &after);
     rs_read_boolean(inf, &door_stop);
     rs_read_boolean(inf, &firstmove);
-    rs_read_boolean(inf, &waswizard);
+    rs_read_char(inf, &waswizard);
     rs_read_boolean(inf, &amulet);
     rs_read_boolean(inf, &in_shell);
     rs_read_boolean(inf, &nochange);
