@@ -3,8 +3,8 @@ apply plugin: 'com.android.application'
 android {
 
     defaultConfig {
-        versionCode = 17
-        versionName = "1.17"
+        versionCode = 18
+        versionName = "1.18"
     }
 
     compileSdkVersion 30
