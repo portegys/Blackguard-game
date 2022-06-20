@@ -124,6 +124,9 @@
 /* Conjurer */
 #define CONJURER 2
 
+/* Checkpoint frequency */
+#define CHECKPOINT_FREQ 10
+
 #ifdef BLACKGUARD
 
 /* Terminal function wrappers: */
@@ -1222,6 +1225,8 @@ void auto_save(int a);
 void game_err(int a);
 int dosave(void);
 void save_file(FILE *savef);
+int docheckpoint(void);
+void checkpoint_file(FILE *savef);
 #ifdef METRO
 int restore(char *file);
 #else

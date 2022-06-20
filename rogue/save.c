@@ -213,6 +213,70 @@ FILE *savef;
 }
 
 /*
+ * docheckpoint:
+ *	Checkpoint the game
+ */
+FILE *checkpointf;
+
+int
+docheckpoint()
+{
+	if (file_name[0] != '\0') {
+		if (checkpointf == NULL) {
+			if ((checkpointf = fopen(file_name, "w")) != NULL) {
+#ifdef WIN32
+				_setmode( _fileno( checkpointf ), _O_BINARY );
+#endif
+			}
+		}
+		fseek(checkpointf, 0, 0);
+		checkpoint_file(checkpointf);
+		fflush(checkpointf);
+		return TRUE;
+	}
+	return FALSE;
+}
+
+/*
+ * checkpoint_file:
+ *	Do the actual checkpoint of this game to a file
+ */
+void
+checkpoint_file(savef)
+		FILE *savef;
+{
+	reg int fnum;
+	int slines = LINES;
+	int scols = COLS;
+
+	/*
+	 * force allocation of the buffer now so that inodes, etc
+	 * can be checked when restoring saved games.
+	 */
+#ifdef WIN32
+	fnum = _fileno(savef);
+#else
+	fnum = fileno(savef);
+#endif
+	fstat(fnum, &sbuf);
+#ifdef BLACKGUARD
+	write(fnum, "TEP", 4);
+#else
+	write(fnum, "RDK", 4);
+#endif
+	lseek(fnum, 0L, 0);
+
+	encwrite(version,strlen(version)+1,savef);
+	encwrite(&sbuf.st_ino,sizeof(sbuf.st_ino),savef);
+	encwrite(&sbuf.st_dev,sizeof(sbuf.st_dev),savef);
+	encwrite(&sbuf.st_ctime,sizeof(sbuf.st_ctime),savef);
+	encwrite(&sbuf.st_mtime,sizeof(sbuf.st_mtime),savef);
+	encwrite(&slines,sizeof(slines),savef);
+	encwrite(&scols,sizeof(scols),savef);
+	rs_save_file(savef);
+}
+
+/*
  * restore:
  *	Restore a saved game from a file
  */

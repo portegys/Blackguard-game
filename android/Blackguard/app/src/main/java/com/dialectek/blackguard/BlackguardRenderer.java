@@ -313,10 +313,23 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
       // Lock display.
       lockDisplay();
 
-      // Display soft keyboard toggle?
+      // Display keyboard and voice prompt?
       if (view == View.FPVIEW)
       {
          softKeyboardToggle.draw(gl);
+
+         // Display voice prompter?
+         if (glview.voiceEnabled)
+         {
+            voicePrompterVisible = true;
+            voicePrompter.draw(gl);
+         }
+         else
+         {
+            voicePrompterVisible = false;
+         }
+      } else {
+         voicePrompterVisible = false;
       }
 
       // Clear picking objects.
@@ -329,21 +342,6 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
          {
             displayScene(gl);
          }
-
-         // Display voice prompter?
-         if (glview.voiceEnabled)
-         {
-            voicePrompterVisible = true;
-            voicePrompter.draw(gl);
-         }
-         else
-         {
-            voicePrompterVisible = false;
-         }
-      }
-      else
-      {
-         voicePrompterVisible = false;
       }
 
       gl.glFlush();
@@ -1064,7 +1062,6 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
          }
       }
 
-
       // Prompt for voice command.
       void prompt()
       {
@@ -1073,6 +1070,7 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
          intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                          RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
          intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say command...");
+         ((Blackguard)context).intentActive = true;
          ((Blackguard)context).startActivityForResult(intent, VOICE_REQUEST_CODE);
       }
 

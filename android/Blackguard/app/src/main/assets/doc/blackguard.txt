@@ -10,7 +10,7 @@
 
        This  document  describes how to play Blackguard and gives a
        few hints for those who might otherwise get lost (or killed)
-       in the Dungeons of Doom.
+       in the Dungeons of Doom. Blackguard is a "roguelike" game.
 
 
 
@@ -363,7 +363,9 @@
 
        c       Call an object.  You can call an object anything you like.
 
-       C       Become conjurer of magic items (~ creates item).
+       C       Become conjurer of objects.
+
+       ~       Conjure object: food, potion, scroll, monster (conjure).
 
        v       Prints the program version number (version).
 
@@ -384,7 +386,6 @@
        @       Show identity (identity).
 
        m       View manual.
-       Search
 
 
        7.1  SPECIAL VOICE COMMANDS

@@ -219,7 +219,8 @@ struct h_list helpstr[] = {
 	'd',	"	drop object",
 	'c',	"	call object",
 #if ANDROID || METRO
-	'C',	"	become conjurer of magic items (~ creates item)",
+	'C',	"	become conjurer of objects",
+	'~',	"	conjure object: food, potion, scroll, monster",
 	'O',	"	change name",
 #else
 	'O',	"	set name and options",
@@ -249,15 +250,12 @@ struct h_list helpstr[] = {
 #ifdef ANDROID
 	'T',	"ap keyboard icon: toggle soft keyboard",
 	'T',	"ap(X2): level overview",
-	'@',	"	show identity",
-	'm',	"	view manual",
-	'S',	"earch",
 #else
 	'T',	"ap keyboard icon: soft keyboard",
 	'T',	"ap screen: toggle level overview",
-	'@',	"	show identity",
-	'S',	"earch  view manual",
 #endif
+	'@',	"	show identity",
+	'm',	"	view manual",
 #else
 	'M',	"ouse	toggle scene overview",
 #endif

@@ -38,6 +38,9 @@ public class Blackguard extends Activity
    // Identity.
    private UUID id;
 
+   // Intent is active.
+   public boolean intentActive;
+
    // Load native Blackguard.
    static
    {

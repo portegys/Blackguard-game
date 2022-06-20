@@ -49,7 +49,7 @@
     <content url="file://$MODULE_DIR$/../../../../../rogue">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../rogue" type="native-Source-root" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 27 Platform (2)" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

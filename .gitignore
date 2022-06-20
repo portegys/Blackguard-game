@@ -1,1 +1,3 @@
-
+build/
+android/private_key.pepk
+android/Blackguard/blackguard.keystore

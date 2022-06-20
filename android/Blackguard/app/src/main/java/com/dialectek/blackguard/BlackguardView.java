@@ -24,9 +24,8 @@ import android.view.MotionEvent;
 import android.widget.Toast;
 
 public class BlackguardView extends GLSurfaceView
-implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener
-{
-   private static final String LOG_TAG = BlackguardView.class .getSimpleName();
+implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
+   private static final String LOG_TAG = BlackguardView.class.getSimpleName();
 
    // Context.
    Context context;
@@ -36,9 +35,9 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
 
    // Gesture detection.
    GestureDetector gestures;
-   float           moveX, moveY;
-   static float    MOVE_DISTANCE_SCALE = 0.1f;
-   static float    TURN_DISTANCE_SCALE = 0.2f;
+   float moveX, moveY;
+   static float MOVE_DISTANCE_SCALE = 0.1f;
+   static float TURN_DISTANCE_SCALE = 0.2f;
    KeyCharacterMap keyCharacterMap;
 
    // Voice recognition enabled?
@@ -52,16 +51,15 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
    boolean viewManual;
 
    // Constructor.
-   public BlackguardView(Context context, UUID id)
-   {
+   public BlackguardView(Context context, UUID id) {
       super(context);
       this.context = context;
 
       // Initialize native Blackguard.
       String[] args = new String[0];
       initBlackguard(args, context.getDir("data",
-                                          Context.MODE_PRIVATE).getAbsolutePath(),
-                     id.toString());
+                      Context.MODE_PRIVATE).getAbsolutePath(),
+              id.toString());
 
       // Create renderer.
       renderer = new BlackguardRenderer(context, this);
@@ -73,20 +71,17 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
       keyCharacterMap = KeyCharacterMap.load(-1);
 
       // Create gesture detector.
-      moveX    = moveY = 0.0f;
+      moveX = moveY = 0.0f;
       gestures = new GestureDetector(context, this);
       gestures.setOnDoubleTapListener(this);
 
       // Set voice recognition status.
-      PackageManager    pm         = context.getPackageManager();
+      PackageManager pm = context.getPackageManager();
       List<ResolveInfo> activities = pm.queryIntentActivities(
-         new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH), 0);
-      if (activities.size() == 0)
-      {
+              new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH), 0);
+      if (activities.size() == 0) {
          voiceEnabled = false;
-      }
-      else
-      {
+      } else {
          voiceEnabled = true;
          initVoiceRecognition();
       }
@@ -98,91 +93,81 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
 
    // Key press events.
    @Override
-   public boolean onKeyDown(int keyCode, KeyEvent event)
-   {
-      switch (keyCode)
-      {
-      case KeyEvent.KEYCODE_CALL:
-      case KeyEvent.KEYCODE_CAMERA:
-      case KeyEvent.KEYCODE_ENDCALL:
-      case KeyEvent.KEYCODE_ENVELOPE:
-      case KeyEvent.KEYCODE_EXPLORER:
-      case KeyEvent.KEYCODE_FOCUS:
-      case KeyEvent.KEYCODE_HOME:
-      case KeyEvent.KEYCODE_HEADSETHOOK:
-      case KeyEvent.KEYCODE_MENU:
-      case KeyEvent.KEYCODE_POWER:
-      case KeyEvent.KEYCODE_VOLUME_DOWN:
-      case KeyEvent.KEYCODE_VOLUME_UP:
-         return(super.onKeyDown(keyCode, event));
+   public boolean onKeyDown(int keyCode, KeyEvent event) {
+      switch (keyCode) {
+         case KeyEvent.KEYCODE_CALL:
+         case KeyEvent.KEYCODE_CAMERA:
+         case KeyEvent.KEYCODE_ENDCALL:
+         case KeyEvent.KEYCODE_ENVELOPE:
+         case KeyEvent.KEYCODE_EXPLORER:
+         case KeyEvent.KEYCODE_FOCUS:
+         case KeyEvent.KEYCODE_HOME:
+         case KeyEvent.KEYCODE_HEADSETHOOK:
+         case KeyEvent.KEYCODE_MENU:
+         case KeyEvent.KEYCODE_POWER:
+         case KeyEvent.KEYCODE_VOLUME_DOWN:
+         case KeyEvent.KEYCODE_VOLUME_UP:
+            return (super.onKeyDown(keyCode, event));
       }
 
       // View manual?
-      if (keyCode == KeyEvent.KEYCODE_SEARCH)
-      {
-         return(viewManual());
+      if (keyCode == KeyEvent.KEYCODE_SEARCH) {
+         return (viewManual());
       }
 
-      if (renderer.view == BlackguardRenderer.View.OVERVIEW)
-      {
-         if (keyCode == KeyEvent.KEYCODE_BACK)
-         {
+      if (renderer.view == BlackguardRenderer.View.OVERVIEW) {
+         if (keyCode == KeyEvent.KEYCODE_BACK) {
             renderer.view = BlackguardRenderer.View.FPVIEW;
             pokeRenderer();
          }
-         return(true);
+         return (true);
       }
 
-      char keyChar = (char)event.getUnicodeChar();
+      char keyChar = (char) event.getUnicodeChar();
 
-      switch (keyCode)
-      {
-      case KeyEvent.KEYCODE_SHIFT_LEFT:
-      case KeyEvent.KEYCODE_SHIFT_RIGHT:
-         return(true);
+      switch (keyCode) {
+         case KeyEvent.KEYCODE_SHIFT_LEFT:
+         case KeyEvent.KEYCODE_SHIFT_RIGHT:
+            return (true);
 
-      case KeyEvent.KEYCODE_BACK:
-         // Escape.
-         keyChar = (char)27;
-         break;
+         case KeyEvent.KEYCODE_BACK:
+            // Escape.
+            keyChar = (char) 27;
+            break;
 
-      case KeyEvent.KEYCODE_DPAD_UP:
-         keyChar = 'K';
-         break;
+         case KeyEvent.KEYCODE_DPAD_UP:
+            keyChar = 'K';
+            break;
 
-      case KeyEvent.KEYCODE_DPAD_DOWN:
-         keyChar = 'J';
-         break;
+         case KeyEvent.KEYCODE_DPAD_DOWN:
+            keyChar = 'J';
+            break;
 
-      case KeyEvent.KEYCODE_DPAD_RIGHT:
-         int d = playerDir();
-         d--;
-         if (d < 0)
-         {
-            d += 8;
-         }
-         if (event.isShiftPressed())
-         {
+         case KeyEvent.KEYCODE_DPAD_RIGHT:
+            int d = playerDir();
             d--;
-            if (d < 0)
-            {
+            if (d < 0) {
                d += 8;
             }
-         }
-         playerDir(d);
-         pokeRenderer();
-         return(true);
+            if (event.isShiftPressed()) {
+               d--;
+               if (d < 0) {
+                  d += 8;
+               }
+            }
+            playerDir(d);
+            pokeRenderer();
+            return (true);
 
-      case KeyEvent.KEYCODE_DPAD_LEFT:
-         d = playerDir();
-         d = (d + 1) % 8;
-         if (event.isShiftPressed())
-         {
+         case KeyEvent.KEYCODE_DPAD_LEFT:
+            d = playerDir();
             d = (d + 1) % 8;
-         }
-         playerDir(d);
-         pokeRenderer();
-         return(true);
+            if (event.isShiftPressed()) {
+               d = (d + 1) % 8;
+            }
+            playerDir(d);
+            pokeRenderer();
+            return (true);
       }
 
       // Clear prompt for space signal.
@@ -190,101 +175,82 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
 
       // Wait for input request?
       lockInput();
-      if (inputReq() == 0)
-      {
+      if (inputReq() == 0) {
          waitInput();
       }
 
-      switch (inputReq())
-      {
-      // Request for character.
-      case 1:
-         switch (keyCode)
-         {
-         case KeyEvent.KEYCODE_ENTER:
-            inputChar('\n');
-            break;
+      switch (inputReq()) {
+         // Request for character.
+         case 1:
+            switch (keyCode) {
+               case KeyEvent.KEYCODE_ENTER:
+                  inputChar('\n');
+                  break;
 
-         case KeyEvent.KEYCODE_DEL:
-            inputChar('\b');
-            break;
+               case KeyEvent.KEYCODE_DEL:
+                  inputChar('\b');
+                  break;
 
-         default:
-            if (!event.isShiftPressed())
-            {
-               keyChar = Character.toLowerCase(keyChar);
+               default:
+                  if (!event.isShiftPressed()) {
+                     keyChar = Character.toLowerCase(keyChar);
+                  } else {
+                     // Map gt/lt keys.
+                     if (keyChar == ';') {
+                        keyChar = '<';
+                     } else if (keyChar == ':') {
+                        keyChar = '>';
+                     }
+                  }
+                  inputChar(keyChar);
+                  break;
             }
-            else
-            {
-               // Map gt/lt keys.
-               if (keyChar == ';')
-               {
-                  keyChar = '<';
-               }
-               else if (keyChar == ':')
-               {
-                  keyChar = '>';
-               }
-            }
-            inputChar(keyChar);
-            break;
-         }
-         inputReq(0);
-         signalInput();
-         break;
-
-      // Request for string.
-      case 2:
-         switch (keyCode)
-         {
-         case KeyEvent.KEYCODE_ENTER:
             inputReq(0);
             signalInput();
             break;
 
-         case KeyEvent.KEYCODE_DEL:
-            if (inputIndex() > 0)
-            {
-               inputIndex(inputIndex() - 1);
-               inputBuf(inputIndex(), '\0');
+         // Request for string.
+         case 2:
+            switch (keyCode) {
+               case KeyEvent.KEYCODE_ENTER:
+                  inputReq(0);
+                  signalInput();
+                  break;
+
+               case KeyEvent.KEYCODE_DEL:
+                  if (inputIndex() > 0) {
+                     inputIndex(inputIndex() - 1);
+                     inputBuf(inputIndex(), '\0');
+                  }
+                  break;
+
+               default:
+                  if (inputIndex() < inputSize() - 1) {
+                     if (!event.isShiftPressed()) {
+                        keyChar = Character.toLowerCase(keyChar);
+                     } else {
+                        // Map gt/lt keys.
+                        if (keyChar == ';') {
+                           keyChar = '<';
+                        } else if (keyChar == ':') {
+                           keyChar = '>';
+                        }
+                     }
+                     inputBuf(inputIndex(), keyChar);
+                     inputIndex(inputIndex() + 1);
+                     inputBuf(inputIndex(), '\0');
+                  }
+                  break;
             }
             break;
 
          default:
-            if (inputIndex() < inputSize() - 1)
-            {
-               if (!event.isShiftPressed())
-               {
-                  keyChar = Character.toLowerCase(keyChar);
-               }
-               else
-               {
-                  // Map gt/lt keys.
-                  if (keyChar == ';')
-                  {
-                     keyChar = '<';
-                  }
-                  else if (keyChar == ':')
-                  {
-                     keyChar = '>';
-                  }
-               }
-               inputBuf(inputIndex(), keyChar);
-               inputIndex(inputIndex() + 1);
-               inputBuf(inputIndex(), '\0');
-            }
             break;
-         }
-         break;
-
-      default:
-         break;
       }
       unlockInput();
       pokeRenderer();
-      return(true);
+      return (true);
    }
-
 
    // View game manual.
    boolean viewManual()
@@ -296,11 +262,13 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
       intent.putExtra("manual_path", manualPath);
       intent.setClassName("com.dialectek.blackguard", "com.dialectek.blackguard.ManualViewer");
       viewManual = true;
+      ((Blackguard)context).intentActive = true;
       try {
          context.startActivity(intent);
       }
       catch (ActivityNotFoundException e) {
          viewManual = false;
+         ((Blackguard)context).intentActive = false;
          Toast.makeText(context,
                         "No activity available to view " + manualPath,
                         Toast.LENGTH_SHORT).show();
@@ -351,6 +319,10 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
       cmdKeys.put("enter", "enter");
       cmdKeys.put("yes", "y");
       cmdKeys.put("no", "n");
+      cmdKeys.put("conjure", "shift `");
+      cmdKeys.put("potion", "shift 1");
+      cmdKeys.put("scroll", "shift /");
+      cmdKeys.put("food", "shift ;");
 
       // Create commands.
       voiceCommands = new ArrayList<String>();
@@ -368,7 +340,6 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
             getKeyEvent(entry.getValue().toString());
       }
    }
-
 
    // Get key event for string.
    KeyEvent getKeyEvent(String keyStr)
@@ -507,7 +478,9 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
          }
          else
          {
+            if (words[j].equals("Apple")) words[j] = "apple";
             char[] keyChars = words[j].toCharArray();
+
             if (keyChars.length > 0)
             {
                char[] c             = new char[1];
@@ -792,10 +765,16 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
       }
    }
 
-
    @Override
    public void onPause()
    {
+      // Detect intent termination.
+      if (((Blackguard)context).intentActive)
+      {
+         ((Blackguard)context).intentActive = false;
+         return;
+      }
+
       super.onPause();
 
       // Wait for game thread to block on input.

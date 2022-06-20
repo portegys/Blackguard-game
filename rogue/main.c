@@ -591,27 +591,33 @@ setup()
 **		refreshing things and looking at the proper times.
 */
 void
-playit()
-{
+playit() {
 	reg char *opts;
 
 #ifndef WIN32
-	tcgetattr(0,&terminal);
+	tcgetattr(0, &terminal);
 #endif
 
 	/* parse environment declaration of options */
 #ifdef BLACKGUARD
 	if ((opts = getenv("BLACKGUARDOPTS")) != NULL)
 #else
-	if ((opts = getenv("ROGUEOPTS")) != NULL)
+		if ((opts = getenv("ROGUEOPTS")) != NULL)
 #endif
 		parse_opts(opts);
 
 	player.t_oldpos = hero;
 	oldrp = roomin(&hero);
 	nochange = FALSE;
-	while (playing)
-		command();		/* Command execution */
+	int checkpointcount = 0;
+	while (playing) {
+		command();        /* Command execution */
+		checkpointcount++;
+		if (checkpointcount >= CHECKPOINT_FREQ) {
+			checkpointcount = 0;
+			docheckpoint();
+		}
+	}
 	endit(0);
 }
 
