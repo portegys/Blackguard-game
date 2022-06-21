@@ -2,25 +2,32 @@
 
 package com.dialectek.blackguard;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.UUID;
 
-import android.content.ActivityNotFoundException;
+import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Typeface;
 import android.opengl.GLSurfaceView;
 import android.os.SystemClock;
 import android.speech.RecognizerIntent;
+import android.util.TypedValue;
 import android.view.GestureDetector;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class BlackguardView extends GLSurfaceView
@@ -46,9 +53,6 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
    // Voice commands and key events.
    ArrayList<String> voiceCommands;
    KeyEvent[] voiceKeyEvents;
-
-   // Viewing manual?
-   boolean viewManual;
 
    // Constructor.
    public BlackguardView(Context context, UUID id) {
@@ -85,13 +89,11 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
          voiceEnabled = true;
          initVoiceRecognition();
       }
-
-      // Not viewing manual.
-      viewManual = false;
    }
 
 
    // Key press events.
+   boolean shiftKeyCode = false;
    @Override
    public boolean onKeyDown(int keyCode, KeyEvent event) {
       switch (keyCode) {
@@ -111,8 +113,18 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
       }
 
       // View manual?
-      if (keyCode == KeyEvent.KEYCODE_SEARCH) {
-         return (viewManual());
+      if ((!shiftKeyCode && keyCode == KeyEvent.KEYCODE_M) || keyCode == KeyEvent.KEYCODE_SEARCH) {
+         shiftKeyCode = false;
+         renderer.softKeyboardToggle.toggle();
+         pokeRenderer();
+         viewManual();
+         return true;
+      }
+      if (keyCode == KeyEvent.KEYCODE_SHIFT_LEFT || keyCode == KeyEvent.KEYCODE_SHIFT_RIGHT)
+      {
+         shiftKeyCode = true;
+      } else {
+         shiftKeyCode = false;
       }
 
       if (renderer.view == BlackguardRenderer.View.OVERVIEW) {
@@ -253,29 +265,58 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
    }
 
    // View game manual.
-   boolean viewManual()
+   void viewManual()
    {
       String manualPath = "doc/blackguard.txt";
-      Intent intent     = new Intent(Intent.ACTION_VIEW);
-
-      intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-      intent.putExtra("manual_path", manualPath);
-      intent.setClassName("com.dialectek.blackguard", "com.dialectek.blackguard.ManualViewer");
-      viewManual = true;
-      ((Blackguard)context).intentActive = true;
-      try {
-         context.startActivity(intent);
-      }
-      catch (ActivityNotFoundException e) {
-         viewManual = false;
-         ((Blackguard)context).intentActive = false;
-         Toast.makeText(context,
-                        "No activity available to view " + manualPath,
-                        Toast.LENGTH_SHORT).show();
-      }
-      return(true);
+      String content = readManual(manualPath);
+      EditText text = new EditText(context);
+      text.setFocusableInTouchMode(false);
+      text.clearFocus();
+      text.setTypeface(Typeface.MONOSPACE);
+      text.setTextSize(TypedValue.COMPLEX_UNIT_DIP,12);
+      text.setText(content);
+      text.setSelection(0);
+      int width = (int)(context.getResources().getDisplayMetrics().widthPixels*0.80);
+      int height = (int)(context.getResources().getDisplayMetrics().heightPixels*0.90);
+     new AlertDialog.Builder(context)
+              .setTitle("Blackguard manual")
+              .setView(text)
+              .setNegativeButton(android.R.string.no, null)
+              .show()
+              .getWindow().setLayout(width, height);
+      text.setSelection(0);
    }
 
+   // Get manual text.
+   private String readManual(String manualPath)
+   {
+      ByteArrayOutputStream byteArrayOutputStream = null;
+      try
+      {
+         InputStream inputStream = context.getAssets().open(manualPath);
+         byteArrayOutputStream = new ByteArrayOutputStream(23000);
+         int i = inputStream.read();
+         while (i != -1)
+         {
+            byteArrayOutputStream.write(i);
+            i = inputStream.read();
+         }
+         inputStream.close();
+      }
+      catch (IOException e) {
+         Toast.makeText(context,
+                 "Cannot read manual " + manualPath,
+                 Toast.LENGTH_SHORT).show();
+      }
+      if (byteArrayOutputStream != null)
+      {
+         return(byteArrayOutputStream.toString());
+      }
+      else
+      {
+         return(null);
+      }
+   }
 
    // Initialize voice recognition.
    void initVoiceRecognition()
@@ -399,6 +440,11 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
       for (i = j = 0; i < matches.size(); i++)
       {
          words = matches.get(i).split(" ");
+         if (words.length == 1 && words[0].equals("manual"))
+         {
+            viewManual();
+            return;
+         }
          if (words.length > 0)
          {
             if ((words.length == 2) && words[0].equals("search"))
@@ -751,18 +797,14 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
    {
       super.onResume();
 
-      // Process will die after viewing manual.
-      if (!viewManual)
-      {
-         // Set focus.
-         setFocusable(true);
-         setFocusableInTouchMode(true);
-         requestFocus();
+      // Set focus.
+      setFocusable(true);
+      setFocusableInTouchMode(true);
+      requestFocus();
 
-         // Activate renderer.
-         renderer.invalidateTextures();
-         pokeRenderer();
-      }
+      // Activate renderer.
+      renderer.invalidateTextures();
+      pokeRenderer();
    }
 
    @Override
@@ -793,16 +835,8 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
    // Stop.
    public void onStop()
    {
-      // If user re-launches a new activity, it will clash with this one,
-      // possibly because of native shared library and thread?
-      // Therefore it is best to exit and resume by loading the save file.
-      // Note1: Tried finish() and android:finishOnTaskLaunch without success.
-      // Note2: If manual viewer is up, let it exit.
-      if (!viewManual)
-      {
-         int pid = android.os.Process.myPid();
-         android.os.Process.killProcess(pid);
-      }
+      int pid = android.os.Process.myPid();
+      android.os.Process.killProcess(pid);
    }
 
 

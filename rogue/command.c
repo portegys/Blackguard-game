@@ -240,7 +240,6 @@ command()
 #if ANDROID
 				when 'm':
 				     after = FALSE;
-				     displaymsg = "View manual";
 #endif
 #if ANDROID || METRO
 				when 'C' :

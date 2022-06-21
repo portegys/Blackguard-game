@@ -97,9 +97,6 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
    long    welcomeTimer;
    boolean welcome;
 
-   // View manual?
-   public boolean viewManual;
-
    // Constructor.
    public BlackguardRenderer(Context context, BlackguardView glview)
    {
@@ -119,7 +116,6 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
       texturesValid        = false;
       modeTimer            = welcomeTimer = SystemClock.uptimeMillis();
       welcome              = true;
-      viewManual           = false;
    }
 
 
@@ -243,12 +239,13 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
       {
          welcomeLabelMaker.shutdown(gl);
       }
-      welcomeText    = new String[5];
+      welcomeText    = new String[6];
       welcomeText[0] = "Swipe to move";
       welcomeText[1] = "Tap for keyboard";
       welcomeText[2] = "Type ? for commands";
       welcomeText[3] = "Type / or tap object to identify";
-      welcomeText[4] = "dialectek.com";
+      welcomeText[4] = "Type m for manual";
+      welcomeText[5] = "dialectek.com";
       textSize       = windowWidth / welcomeText[0].length();
       if (textSize > MAX_TEXT_SIZE) { textSize = MAX_TEXT_SIZE; }
       x = welcomeText[0].length() * textSize * 2;
@@ -353,14 +350,6 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
       {
          glview.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
       }
-
-      // View manual?
-      if (viewManual)
-      {
-         viewManual = false;
-         softKeyboardToggle.toggle();
-         glview.viewManual();
-      }
    }
 
 
@@ -385,13 +374,8 @@ public class BlackguardRenderer implements GLSurfaceView.Renderer
       largeLabelMaker.beginDrawing(gl, windowWidth, windowHeight);
       welcomeLabelMaker.beginDrawing(gl, windowWidth, windowHeight);
 
-      String msg = displaymsg();
-      if ((msg != null) && msg.startsWith("View manual"))
-      {
-         viewManual = true;
-      }
-
       draw = true;
+      String msg = displaymsg();
       if (currentWindow() && !welcome)
       {
          clen    = windowWidth / COLS;

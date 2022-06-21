@@ -1,19 +1,9 @@
 
-
-
-       
-
-
-
                           The Game of Blackguard
-
 
        This  document  describes how to play Blackguard and gives a
        few hints for those who might otherwise get lost (or killed)
        in the Dungeons of Doom. Blackguard is a "roguelike" game.
-
-
-
 
 
        1.  INTRODUCTION
@@ -571,10 +561,6 @@
         Tap     toggle soft keyboard      Tap X2  level overview
         M       toggle mute               @       identity
         m/Search  view manual
-
-
-       Tom Portegys
-       dialectek.com/blackguard
 
 
 
