@@ -548,18 +548,20 @@
         w       wield a weapon            W       wear armor
         a       encumbrance               O       examine/set options
         c       call object               R       remove ring
-        d       drop object               P       put on ring
-        e       eat food                  T       take armor off
-        q       quaff potion              Q       quit game
-        r       read a scroll             S       show scores
-        v       program version number    D       dip object in magic pool
-        z       zap a wand or staff       s       search for traps
-        t       throw something           f       forward until find
-        .       rest for a while          >       go down a staircase
-        <       go up a staircase         Back    cancel last command
-        Arrows  move and turn             Swipe   move and turn
-        Tap     toggle soft keyboard      Tap X2  level overview
-        M       toggle mute               @       identity
+        C       Become conjurer           P       put on ring
+        ~       Conjure object            T       take armor off
+        d       drop object               Q       quit game
+        e       eat food                  S       show scores
+        q       quaff potion              D       dip object in magic pool
+        r       read a scroll             s       search for traps
+        v       program version number    f       forward until find
+        z       zap a wand or staff       >       go down a staircase
+        t       throw something           Back    cancel last command
+        .       rest for a while          Swipe   move and turn
+        <       go up a staircase         Tap X2  level overview
+        Arrows  move and turn             @       identity
+        Tap     toggle soft keyboard
+        M       toggle mute
         m/Search  view manual
 
 
