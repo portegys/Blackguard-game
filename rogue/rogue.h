@@ -26,6 +26,44 @@
 #define BOOL char
 #endif
 
+/* Prototypes. */
+void notifyDie();
+void notifyDipObject();
+void notifyEatFood();
+void notifyHitMonster(char, int, int);
+void notifyHitPlayer();
+void notifyKilled(char, int, int);
+void notifyLevelUp();
+void notifyOpenDungeon();
+void notifyPickupGold();
+void notifyPickupObject();
+void notifyQuaffPotion();
+void notifyReadScroll();
+void notifyStairs();
+void notifyThrowObject();
+void notifyThunkMissile(char, int, int);
+void notifyWinner();
+void notifyZapWand();
+int access(const char *, int);
+int close(int fildes);
+int execl(const char *path, const char *arg, ... /* (char *) NULL */);
+int fork();
+int getpid();
+uid_t getuid();
+void *memset(void *s, int c, size_t n);
+ssize_t read(int fd, void *buf, size_t count);
+void *sbrk(intptr_t increment);
+unsigned int sleep(unsigned int seconds);
+char *strcat(char *dest, const char *src);
+int strcmp(const char *s1, const char *s2);
+char *strcpy(char *dest, const char *src);
+int strncmp(const char *s1, const char *s2, size_t n);
+char *strncpy(char *destination, const char *source, size_t num);
+size_t strlen(const char *s);
+int unlink(const char *pathname);
+int usleep(useconds_t useconds);
+int wait(int *);
+
 /*
  * Maximum number of different things
  */
@@ -609,7 +647,7 @@ extern char *displaymsg;
 
 struct delayed_action {
 	int d_type;
-	int (*d_func)();
+	void (*d_func)();
 	int d_arg;
 	int d_time;
 };
@@ -984,7 +1022,7 @@ void take_off(void);
 void initarmor(struct object *obj, int what);
 int hurt_armor(struct object *obj);
 /* chase.c */
-void runners(void);
+void runners(int);
 int do_chase(struct linked_list *mon);
 int chase(struct thing *tp, struct coord *ee, BOOL runaway, BOOL dofight);
 void runto(struct coord *runner, struct coord *spot);
@@ -1003,14 +1041,14 @@ void u_level(void);
 void shell(void);
 void call(void);
 /* daemon.c */
-struct delayed_action *d_insert(int (*func)(void), int arg, int type, int time);
+struct delayed_action *d_insert(void (*func)(int), int arg, int type, int time);
 void d_delete(struct delayed_action *wire);
 struct delayed_action *find_slot(int (*func)(void));
-void do_daemon(int (*func)(void), int arg, int type);
+void do_daemon(void (*func)(int), int arg, int type);
 void do_daemons(int flag);
-void fuse(int (*func)(void), int arg, int time);
-void lengthen(int (*func)(void), int xtime);
-void extinguish(int (*func)(void));
+void fuse(void (*func)(int), int arg, int time);
+void lengthen(void (*func)(void), int xtime);
+void extinguish(void (*func)(int));
 void do_fuses(void);
 void activity(void);
 /* daemons.c */

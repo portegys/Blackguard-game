@@ -3,16 +3,16 @@ apply plugin: 'com.android.application'
 android {
 
     defaultConfig {
-        versionCode = 19
-        versionName = "1.19"
+        versionCode = 20
+        versionName = "1.20"
     }
 
-    compileSdkVersion 30
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.dialectek.blackguard"
-        minSdkVersion 3
-        targetSdkVersion 30
+        minSdkVersion 21
+        targetSdkVersion 34
         ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
         ndk {
             moduleName "Blackguard"
@@ -30,4 +30,5 @@ android {
             path file('src/main/jni/Android.mk')
         }
     }
+    namespace 'com.dialectek.blackguard'
 }

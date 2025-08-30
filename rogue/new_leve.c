@@ -20,7 +20,7 @@ void
 new_level(ltype)
 int ltype;
 {
-	register i;
+	register int i;
 	register char ch;
         register struct linked_list *item;
         register struct thing *tp;	
@@ -151,7 +151,7 @@ again:
 int
 rnd_room()
 {
-	register rm;
+	register int rm;
 
 	if (levtype != NORMLEV)
 		rm = 0;
@@ -172,7 +172,7 @@ rnd_room()
 void
 put_things()
 {
-	register i, cnt, rm;
+	register int i, cnt, rm;
 	struct linked_list *item;
 	struct object *cur;
 	struct coord tp;

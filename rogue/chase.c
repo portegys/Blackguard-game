@@ -22,7 +22,7 @@ struct coord ch_ret;	/* Where chasing takes you */
  *	Make all the running monsters move.
  */
 void
-runners()
+runners(int dummy)
 {
 	reg struct thing *tp;
 	reg struct room *rp;

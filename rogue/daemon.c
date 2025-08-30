@@ -29,8 +29,7 @@ struct delayed_action d_list[MAXDAEMONS] = {
  *	Insert a function in the daemon list.
  */
 struct delayed_action *
-d_insert(func, arg, type, time)
-int arg, type, time, (*func)();
+d_insert(void (*func)(int), int arg, int type, int time)
 {
 	reg struct delayed_action *dev;
 
@@ -85,8 +84,7 @@ int (*func)();
  *	Start a daemon, takes a function.
  */
 void
-do_daemon(func, arg, type)
-int arg, type, (*func)();
+do_daemon(void (*func)(int), int arg, int type)
 {
 	d_insert(func, arg, type, DAEMON);
 }
@@ -112,8 +110,7 @@ int flag;
  *	Start a fuse to go off in a certain number of turns
  */
 void
-fuse(func, arg, time)
-int (*func)(), arg, time;
+fuse(void (*func)(int), int arg, int time)
 {
 	d_insert(func, arg, AFTER, time);
 }
@@ -123,8 +120,7 @@ int (*func)(), arg, time;
  *	Increase the time until a fuse goes off
  */
 void
-lengthen(func, xtime)
-int (*func)(), xtime;
+lengthen(void (*func)(), int xtime)
 {
 	reg struct delayed_action *wire;
 
@@ -138,8 +134,7 @@ int (*func)(), xtime;
  *	Put out a fuse. Find all such fuses and kill them.
  */
 void
-extinguish(func)
-int (*func)();
+extinguish(void (*func)(int))
 {
 	reg struct delayed_action *dev;
 

@@ -146,7 +146,7 @@ struct object *wh;
 int
 playenc()
 {
-	reg estr = him->s_ef.a_str;
+	int estr = him->s_ef.a_str;
 	if (estr >= 24)
 		return 3000;
 	switch(him->s_ef.a_str) {

@@ -289,7 +289,7 @@ restore(file, envp)
 char *file, **envp;
 #endif
 {
-	register inf, pid;
+	register int inf, pid;
 	int ret_status;
 #ifndef _AIX
 	extern char **environ;
