@@ -12,6 +12,15 @@
 
 #ifdef WIN32
 #include <windows.h>
+typedef unsigned int uid_t;
+typedef unsigned int gid_t;
+typedef unsigned int useconds_t;
+#endif
+#if defined(_MSC_VER)
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+#else
+#include <sys/types.h>
 #endif
 #include <stdio.h>
 #include <stdlib.h>
