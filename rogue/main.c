@@ -68,7 +68,7 @@ char **envp;
 #ifndef ANDROID
     char *strrchr();
 #endif
-	char *getpass(char *);
+	char *getpass(const char *);
 	int lowtime;
 	time_t now;
     char *roguehome();
@@ -725,7 +725,7 @@ roguehome()
 #endif
 }
 
-char *getpass(char *prompt)
+char *getpass(const char *prompt)
 {
         static char buf[128];
         size_t i;

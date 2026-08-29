@@ -20,6 +20,7 @@ typedef unsigned int useconds_t;
 #include <BaseTsd.h>
 typedef SSIZE_T ssize_t;
 #else
+#include <unistd.h>
 #include <sys/types.h>
 #endif
 #include <stdio.h>
