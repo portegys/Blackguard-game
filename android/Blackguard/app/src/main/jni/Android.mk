@@ -9,6 +9,8 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
+LOCAL_SHORT_COMMANDS := true
+
 LOCAL_MODULE    := Blackguard
 
 # Rogue and ncurses.

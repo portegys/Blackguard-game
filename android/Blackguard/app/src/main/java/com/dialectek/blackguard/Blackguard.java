@@ -24,9 +24,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Insets;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
+import android.view.View;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 public class Blackguard extends Activity
 {
@@ -63,6 +67,14 @@ public class Blackguard extends Activity
 
       // EULA.
       Eula.show(this);
+
+      // Handle edge-to-edge.
+      View rootView = findViewById(android.R.id.content);
+      ViewCompat.setOnApplyWindowInsetsListener(rootView, (v, insets) -> {
+         Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars()).toPlatformInsets();
+         rootView.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+         return insets;
+      });
 
       // Initialize sounds.
       SoundManager.initSounds(this);

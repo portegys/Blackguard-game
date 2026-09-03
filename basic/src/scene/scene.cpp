@@ -301,17 +301,17 @@ void Scene::setPlayerLocale(int x, int z, DIRECTION dir)
    m_locale = IN_PASSAGE;
    for (i = 0; i < WIDTH; i++)
    {
-      for (j = 0; j < HEIGHT; j++)
+      for (j = 0; j < HEIGHT - 1; j++)
       {
          if ((m_actual[i][j] == '-') && ((m_actual[i][j + 1] == '|') ||
                                          (m_actual[i][j + 1] == '+') || (m_actual[i][j + 1] == '&')))
          {
-            for (k = i, w = 0; m_actual[k][j] == '-' ||
-                 m_actual[k][j] == '+' || m_actual[k][j] == '&'; k++, w++)
+            for (k = i, w = 0; k < WIDTH && (m_actual[k][j] == '-' ||
+                 m_actual[k][j] == '+' || m_actual[k][j] == '&'); k++, w++)
             {
             }
-            for (k = j + 1, h = 2; m_actual[i][k] == '|' ||
-                 m_actual[i][k] == '+' || m_actual[i][k] == '&'; k++, h++)
+            for (k = j + 1, h = 2; k < HEIGHT && (m_actual[i][k] == '|' ||
+                 m_actual[i][k] == '+' || m_actual[i][k] == '&'); k++, h++)
             {
             }
             if ((x >= i) && (x < (i + w)) &&

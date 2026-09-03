@@ -11,7 +11,7 @@ Unfortunately the artwork necessary for this was not done, making it a nice enha
 Directories:
 
 - android: Android Studio.
-- basic: OpenGL graphics with C++/C engine thread, FMOD audio (x86).
+- basic: OpenGL graphics with C++/C engine thread, FMOD audio.
 - ios: Marmalade.
 - jogl_jni: Java (JOGL) graphics with JNI/C++/C engine thread.
 - metro: Windows Store app.

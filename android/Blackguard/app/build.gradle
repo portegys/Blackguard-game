@@ -3,26 +3,26 @@ apply plugin: 'com.android.application'
 android {
 
     defaultConfig {
-        versionCode = 20
-        versionName = "1.20"
+        versionCode = 36
+        versionName = "1.1"
     }
 
-    compileSdkVersion 34
-
+    compileSdkVersion 37
     defaultConfig {
         applicationId "com.dialectek.blackguard"
-        minSdkVersion 21
-        targetSdkVersion 34
-        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+        minSdkVersion 29
+        targetSdkVersion 37
         ndk {
             moduleName "Blackguard"
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
         }
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.debug
         }
     }
     externalNativeBuild {
@@ -31,4 +31,7 @@ android {
         }
     }
     namespace 'com.dialectek.blackguard'
+}
+dependencies {
+    implementation 'androidx.core:core:1.19.0'
 }
