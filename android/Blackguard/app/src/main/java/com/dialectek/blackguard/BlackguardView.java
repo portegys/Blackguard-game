@@ -275,16 +275,15 @@ implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListene
       text.setTypeface(Typeface.MONOSPACE);
       text.setTextSize(TypedValue.COMPLEX_UNIT_DIP,12);
       text.setText(content);
-      text.setSelection(0);
       int width = (int)(context.getResources().getDisplayMetrics().widthPixels*0.80);
       int height = (int)(context.getResources().getDisplayMetrics().heightPixels*0.90);
-     new AlertDialog.Builder(context)
+      new AlertDialog.Builder(context)
               .setTitle("Blackguard manual")
               .setView(text)
               .setNegativeButton(android.R.string.no, null)
               .show()
               .getWindow().setLayout(width, height);
-      text.setSelection(0);
+      text.post(() -> {text.setSelection(0);});
    }
 
    // Get manual text.
