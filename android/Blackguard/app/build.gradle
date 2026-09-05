@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     defaultConfig {
-        versionCode = 37
+        versionCode = 40
         versionName = "1.1"
     }
     compileSdkVersion 37
@@ -29,7 +29,6 @@ android {
         }
     }
     namespace 'com.dialectek.blackguard'
-    ndkVersion '28.2.13676358'
 }
 dependencies {
     implementation 'androidx.core:core:1.19.0'
