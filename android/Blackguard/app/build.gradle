@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     defaultConfig {
-        versionCode = 40
+        versionCode = 42
         versionName = "1.1"
     }
     compileSdkVersion 37

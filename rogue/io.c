@@ -174,11 +174,12 @@ int fromfuse;
 		hwidth[1] = '3';	/* if hit point >= 100	*/
 		hwidth[5] = '3';	/* change %2d to %3d	*/
 	}
+	memset(buf, 0, LINLEN);
 #if ANDROID || METRO
 	if (stre->a_str < stmx->a_str)
-		sprintf(buf, "  Str: %2d(*%2d)", stef->a_str, stre->a_str);
+		sprintf(buf, "Str: %2d(*%2d)", stef->a_str, stre->a_str);
 	else
-		sprintf(buf, "  Str: %2d(%2d)", stef->a_str, stre->a_str);
+		sprintf(buf, "Str: %2d(%2d)", stef->a_str, stre->a_str);
 #else
 	if (stre->a_str < stmx->a_str)
 		ch = '*';
